@@ -1,192 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>MA POTTERY STUDIOS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>MA Pottery Studios Map | Roy's Clay Co.</title>
 
-  <!-- Fonts: VT323 (pixel display) + Inter (body) + IBM Plex Mono (data) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Space Grotesk — matches roysclay.co exactly -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- Leaflet MarkerCluster -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <!-- MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
   <style>
-    /* ── Design system tokens ─────────────────────────────────────── */
+    /* ── Design tokens — from roysclay.co ─────────────────────────── */
     :root {
-      --bg-base:            #0D0D0D;
-      --bg-surface:         #1A1A1A;
-      --bg-surface-raised:  #242424;
-      --bg-input:           #2A2A2A;
-      --text-primary:       #F0EDE8;
-      --text-secondary:     #8A8A8A;
-      --text-muted:         #5A5A5A;
-      --accent:             #F27A3E;
-      --accent-hover:       #FF8F57;
-      --border-subtle:      #2A2A2A;
-      --error:              #E54D4D;
+      --bg:        #fafafa;
+      --text:      #1a1a1a;
+      --text-light: #555;
+      --accent:    #c66b3b;
+      --card-bg:   #f0f0f0;
+      --accent-2:  #28495c;
+      --border:    rgba(0,0,0,0.08);
 
-      --font-display: 'VT323', 'Share Tech Mono', monospace;
-      --font-body:    'Inter', -apple-system, sans-serif;
-      --font-mono:    'IBM Plex Mono', 'SF Mono', monospace;
+      --font: 'Space Grotesk', -apple-system, sans-serif;
 
-      --radius-card:   16px;
-      --radius-button: 999px;
-      --radius-input:  12px;
-      --radius-small:  8px;
-
-      --sidebar-width: 280px;
-      --header-height: 56px;
+      --sidebar-width: 300px;
+      --header-height: 72px;
     }
 
-    /* ── Reset ────────────────────────────────────────────────────── */
+    /* ── Reset ─────────────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
       height: 100%;
       overflow: hidden;
-      background: var(--bg-base);
-      color: var(--text-primary);
-      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
       -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
     a { color: inherit; text-decoration: none; }
     button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
 
-    /* ── App shell ────────────────────────────────────────────────── */
+    /* ── App shell ─────────────────────────────────────────────────── */
     #app {
       display: flex;
       flex-direction: column;
       height: 100%;
     }
 
-    /* ── Header ───────────────────────────────────────────────────── */
+    /* ── Header ────────────────────────────────────────────────────── */
     #header {
       height: var(--header-height);
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-subtle);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 20px 0 24px;
+      padding: 0 2rem;
       flex-shrink: 0;
       z-index: 100;
     }
-    #header h1 {
-      font-family: var(--font-display);
-      font-size: 28px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-primary);
-      line-height: 1;
+    #header-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    #header-meta {
+    #header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    #header-tagline {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+    #header-back {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent-2);
+      letter-spacing: 0.02em;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 4px;
+      transition: color 0.3s;
     }
-    #header-meta .dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-    #header-meta span {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
+    #header-back:hover { color: var(--accent); }
 
-    /* ── Body row (sidebar + map) ─────────────────────────────────── */
+    /* ── Body ──────────────────────────────────────────────────────── */
     #body {
       display: flex;
       flex: 1;
       overflow: hidden;
     }
 
-    /* ── Sidebar ──────────────────────────────────────────────────── */
+    /* ── Sidebar ───────────────────────────────────────────────────── */
     #sidebar {
       width: var(--sidebar-width);
-      background: var(--bg-surface);
-      border-right: 1px solid var(--border-subtle);
-      padding: 20px;
+      background: var(--bg);
+      border-right: 1px solid var(--border);
+      padding: 1.75rem 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.5rem;
       overflow-y: auto;
       flex-shrink: 0;
-      z-index: 50;
+    }
+
+    /* Section label — matches site's h2 style */
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
     }
 
     /* Search */
-    #search-wrap {
-      position: relative;
-    }
+    #search-wrap { position: relative; }
     #search-wrap svg {
       position: absolute;
-      left: 14px;
+      left: 12px;
       top: 50%;
       transform: translateY(-50%);
       pointer-events: none;
-      color: var(--text-muted);
+      color: var(--text-light);
+      opacity: 0.5;
     }
     #search {
       width: 100%;
-      background: var(--bg-input);
-      color: var(--text-primary);
-      font-family: var(--font-body);
-      font-size: 14px;
-      padding: 12px 16px 12px 40px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 0.875rem;
+      font-weight: 400;
+      padding: 10px 12px 10px 36px;
       border: 1px solid transparent;
-      border-radius: var(--radius-input);
+      border-radius: 6px;
       outline: none;
-      transition: border-color 150ms ease-out;
+      transition: border-color 0.3s;
     }
-    #search::placeholder { color: var(--text-muted); }
-    #search:focus { border-color: var(--border-subtle); }
+    #search::placeholder { color: var(--text-light); }
+    #search:focus { border-color: rgba(0,0,0,0.15); }
 
-    /* Filter section */
-    .filter-heading {
-      font-family: var(--font-display);
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-secondary);
-      margin-bottom: 12px;
-    }
+    /* Divider */
+    .divider { height: 1px; background: var(--border); }
+
+    /* Filters */
     .filter-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 0;
     }
     .filter-item {
       display: flex;
       align-items: center;
       gap: 10px;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
       cursor: pointer;
       user-select: none;
     }
+    .filter-item:last-child { border-bottom: none; }
     .filter-item input[type="checkbox"] { display: none; }
     .checkbox-box {
       width: 18px;
       height: 18px;
-      border: 1.5px solid var(--text-muted);
+      border: 1.5px solid rgba(0,0,0,0.2);
       border-radius: 4px;
       flex-shrink: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 150ms ease-out;
+      background: white;
+      transition: all 0.2s;
     }
     .filter-item input:checked + .checkbox-box {
       background: var(--accent);
@@ -195,45 +195,31 @@
     .filter-item input:checked + .checkbox-box svg { display: block; }
     .checkbox-box svg {
       display: none;
-      width: 11px;
-      height: 11px;
-      stroke: var(--bg-base);
+      width: 10px;
+      height: 10px;
+      stroke: white;
       stroke-width: 2.5;
       fill: none;
     }
     .filter-label {
-      font-family: var(--font-display);
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-primary);
-      line-height: 1;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--text);
     }
 
-    /* Divider */
-    .divider {
-      height: 1px;
-      background: var(--border-subtle);
-    }
-
-    /* Studio count */
+    /* Count */
     #count-label {
-      font-family: var(--font-display);
-      font-size: 22px;
-      color: var(--text-secondary);
-      letter-spacing: 0.04em;
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--text-light);
     }
-    #count-label span {
-      color: var(--accent);
+    #count-label strong {
+      font-weight: 600;
+      color: var(--text);
     }
 
     /* Legend */
-    .legend {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 4px;
-    }
+    .legend { display: flex; flex-direction: column; gap: 8px; }
     .legend-item {
       display: flex;
       align-items: center;
@@ -245,328 +231,341 @@
       border-radius: 50%;
       flex-shrink: 0;
     }
-    .legend-dot.default { background: var(--text-primary); }
-    .legend-dot.accent  { background: var(--accent); }
+    .legend-dot.terracotta { background: var(--accent); }
+    .legend-dot.teal       { background: var(--accent-2); }
     .legend-text {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-light);
     }
 
-    /* ── Map ──────────────────────────────────────────────────────── */
+    /* Credit blurb at bottom of sidebar */
+    #sidebar-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    #sidebar-footer p {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    #sidebar-footer a {
+      color: var(--accent-2);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    #sidebar-footer a:hover { color: var(--accent); }
+
+    /* ── Map ───────────────────────────────────────────────────────── */
     #map {
       flex: 1;
       z-index: 1;
     }
 
-    /* ── Leaflet overrides ────────────────────────────────────────── */
+    /* ── Leaflet overrides ─────────────────────────────────────────── */
     .leaflet-control-zoom {
-      border: 1px solid var(--border-subtle) !important;
-      border-radius: var(--radius-small) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 6px !important;
       overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
     }
     .leaflet-control-zoom a {
-      background: var(--bg-surface-raised) !important;
-      color: var(--text-primary) !important;
-      font-family: var(--font-display) !important;
-      font-size: 18px !important;
-      border-bottom: 1px solid var(--border-subtle) !important;
-      width: 34px !important;
-      height: 34px !important;
-      line-height: 34px !important;
+      background: var(--bg) !important;
+      color: var(--text) !important;
+      font-family: var(--font) !important;
+      font-size: 16px !important;
+      font-weight: 300 !important;
+      border-bottom: 1px solid var(--border) !important;
+      width: 32px !important;
+      height: 32px !important;
+      line-height: 32px !important;
     }
     .leaflet-control-zoom a:hover {
-      background: var(--bg-input) !important;
+      background: var(--card-bg) !important;
       color: var(--accent) !important;
     }
     .leaflet-control-zoom a:last-child { border-bottom: none !important; }
     .leaflet-control-attribution {
-      background: rgba(13, 13, 13, 0.75) !important;
-      color: var(--text-muted) !important;
-      font-family: var(--font-mono) !important;
+      background: rgba(250,250,250,0.85) !important;
+      color: rgba(0,0,0,0.35) !important;
+      font-family: var(--font) !important;
       font-size: 10px !important;
+      font-weight: 300 !important;
     }
-    .leaflet-control-attribution a { color: var(--text-muted) !important; }
+    .leaflet-control-attribution a { color: rgba(0,0,0,0.4) !important; }
 
-    /* Cluster icons */
+    /* Clusters */
     .marker-cluster-small,
     .marker-cluster-medium,
-    .marker-cluster-large {
-      background: none !important;
-    }
+    .marker-cluster-large { background: none !important; }
     .marker-cluster-small div,
     .marker-cluster-medium div,
     .marker-cluster-large div {
-      background: var(--bg-surface-raised) !important;
+      background: white !important;
       border: 1.5px solid var(--accent) !important;
       border-radius: 50% !important;
-      color: var(--text-primary) !important;
-      font-family: var(--font-display) !important;
-      font-size: 16px !important;
-      font-weight: 400 !important;
+      color: var(--text) !important;
+      font-family: var(--font) !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: 34px !important;
-      height: 34px !important;
+      width: 32px !important;
+      height: 32px !important;
       margin: 0 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
     }
-    .marker-cluster {
-      width: 34px !important;
-      height: 34px !important;
-    }
+    .marker-cluster { width: 32px !important; height: 32px !important; }
 
-    /* ── Popup ────────────────────────────────────────────────────── */
+    /* ── Popup ─────────────────────────────────────────────────────── */
     .leaflet-popup-content-wrapper {
-      background: var(--bg-surface-raised) !important;
-      border-radius: var(--radius-card) !important;
-      border: 1px solid #333 !important;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+      background: white !important;
+      border-radius: 8px !important;
+      border: none !important;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
       padding: 0 !important;
     }
-    .leaflet-popup-tip-container { display: none; }
+    .leaflet-popup-tip { background: white !important; }
     .leaflet-popup-close-button {
-      color: var(--text-muted) !important;
-      font-size: 18px !important;
-      top: 12px !important;
-      right: 14px !important;
+      color: rgba(0,0,0,0.3) !important;
+      font-size: 20px !important;
+      top: 10px !important;
+      right: 12px !important;
       padding: 0 !important;
-      font-family: var(--font-body) !important;
+      font-weight: 300 !important;
     }
-    .leaflet-popup-close-button:hover { color: var(--text-primary) !important; }
+    .leaflet-popup-close-button:hover { color: var(--text) !important; }
     .leaflet-popup-content {
       margin: 0 !important;
       width: 260px !important;
     }
-    .popup-inner {
-      padding: 20px;
-    }
+
+    /* Popup card contents */
+    .popup-inner { padding: 1.25rem; }
     .popup-name {
-      font-family: var(--font-display);
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--text-primary);
-      line-height: 1.2;
-      margin-bottom: 6px;
-      padding-right: 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 4px;
+      padding-right: 18px;
     }
     .popup-address {
-      font-family: var(--font-body);
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.4;
-      margin-bottom: 12px;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-light);
+      margin-bottom: 10px;
     }
     .popup-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 4px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .popup-tag {
-      font-family: var(--font-display);
-      font-size: 12px;
-      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 500;
       letter-spacing: 0.08em;
-      padding: 3px 9px;
-      border-radius: var(--radius-button);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-muted);
-      background: var(--bg-surface);
-      line-height: 1.4;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 3px;
+      background: var(--card-bg);
+      color: var(--text-light);
     }
     .popup-tag.active {
+      background: rgba(198, 107, 59, 0.1);
       color: var(--accent);
-      border-color: var(--accent);
     }
     .popup-notes {
-      font-family: var(--font-body);
-      font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 14px;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
     }
     .popup-actions {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
     }
     .popup-btn {
-      font-family: var(--font-display);
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 6px 14px;
-      border-radius: var(--radius-button);
-      border: 1.5px solid var(--text-muted);
-      color: var(--text-secondary);
-      background: transparent;
+      font-family: var(--font);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 5px 12px;
+      border-radius: 4px;
+      background: var(--card-bg);
+      color: var(--text-light);
+      border: none;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      transition: all 150ms ease-out;
+      transition: background 0.3s, color 0.3s;
       text-decoration: none;
     }
     .popup-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
+      background: var(--accent-2);
+      color: white;
     }
     .popup-phone {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 10px;
-    }
-    .popup-divider {
-      height: 1px;
-      background: var(--border-subtle);
-      margin: 12px 0;
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--text-light);
+      margin-top: 6px;
     }
 
-    /* ── Mobile filter button ─────────────────────────────────────── */
+    /* ── Mobile filter toggle ──────────────────────────────────────── */
     #filter-toggle {
       display: none;
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 1.5rem;
+      right: 1.5rem;
       z-index: 1000;
       background: var(--accent);
-      color: var(--bg-base);
-      font-family: var(--font-display);
-      font-size: 15px;
+      color: white;
+      font-family: var(--font);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 12px 20px;
-      border-radius: var(--radius-button);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      padding: 10px 18px;
+      border-radius: 999px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
       align-items: center;
-      gap: 8px;
-      transition: transform 150ms ease-out, background 150ms ease-out;
+      gap: 6px;
+      transition: transform 0.2s, background 0.3s;
     }
+    #filter-toggle:hover { background: #d4764a; }
     #filter-toggle:active { transform: scale(0.97); }
-    #filter-toggle:hover { background: var(--accent-hover); }
 
-    /* ── Mobile drawer ────────────────────────────────────────────── */
+    /* ── Mobile drawer ─────────────────────────────────────────────── */
     #drawer-overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.4);
       z-index: 200;
       opacity: 0;
-      transition: opacity 200ms ease-out;
+      transition: opacity 0.2s;
     }
     #drawer-overlay.visible { opacity: 1; }
     #sidebar.drawer {
       position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      bottom: 0; left: 0; right: 0;
       width: 100%;
-      max-height: 65vh;
+      max-height: 70vh;
       border-right: none;
-      border-top: 1px solid var(--border-subtle);
-      border-radius: 16px 16px 0 0;
+      border-top: 1px solid var(--border);
+      border-radius: 12px 12px 0 0;
       transform: translateY(100%);
-      transition: transform 200ms ease-out;
+      transition: transform 0.2s ease-out;
       z-index: 300;
     }
     #sidebar.drawer.open { transform: translateY(0); }
 
-    /* ── Responsive ───────────────────────────────────────────────── */
+    /* ── Responsive ────────────────────────────────────────────────── */
     @media (max-width: 768px) {
       #sidebar { display: none; }
       #sidebar.drawer { display: flex; }
       #filter-toggle { display: flex; }
-      #body { flex-direction: column; }
-      #header h1 { font-size: 22px; }
-      #header-meta span { display: none; }
+      #header { padding: 0 1.25rem; }
+      #header h1 { font-size: 0.95rem; }
     }
 
-    /* ── Scrollbar ────────────────────────────────────────────────── */
-    #sidebar::-webkit-scrollbar { width: 4px; }
+    /* ── Scrollbar ─────────────────────────────────────────────────── */
+    #sidebar::-webkit-scrollbar { width: 3px; }
     #sidebar::-webkit-scrollbar-track { background: transparent; }
-    #sidebar::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 2px; }
+    #sidebar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 2px; }
 
-    /* ── No results message ───────────────────────────────────────── */
+    /* ── No results ────────────────────────────────────────────────── */
     #no-results {
       display: none;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
       text-align: center;
       pointer-events: none;
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     #no-results p {
-      font-family: var(--font-display);
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
     }
     #no-results small {
-      font-family: var(--font-body);
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-top: 6px;
-      display: block;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-light);
     }
   </style>
 </head>
 <body>
 <div id="app">
 
-  <!-- ── Header ─────────────────────────────────────────────────────── -->
+  <!-- ── Header ──────────────────────────────────────────────────────── -->
   <header id="header">
-    <h1>MA Pottery Studios</h1>
-    <div id="header-meta">
-      <div class="dot"></div>
-      <span>Massachusetts</span>
+    <div id="header-left">
+      <h1>MA Pottery Studios</h1>
+      <span id="header-tagline">Massachusetts ceramics map</span>
     </div>
+    <a href="https://roysclay.co" id="header-back">
+      ← Roy's Clay Co.
+    </a>
   </header>
 
-  <!-- ── Body ───────────────────────────────────────────────────────── -->
+  <!-- ── Body ────────────────────────────────────────────────────────── -->
   <div id="body">
 
-    <!-- Sidebar (desktop) -->
+    <!-- Sidebar -->
     <aside id="sidebar">
 
       <!-- Search -->
-      <div id="search-wrap">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-        <input id="search" type="text" placeholder="search studios..." autocomplete="off">
+      <div>
+        <p class="section-label">Search</p>
+        <div id="search-wrap">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input id="search" type="text" placeholder="studio name or city..." autocomplete="off" />
+        </div>
       </div>
 
       <div class="divider"></div>
 
       <!-- Filters -->
       <div>
-        <div class="filter-heading">Filter</div>
+        <p class="section-label">Filter</p>
         <div class="filter-group">
           <label class="filter-item">
-            <input type="checkbox" id="cb-classes">
+            <input type="checkbox" id="cb-classes" />
             <span class="checkbox-box">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
             <span class="filter-label">Classes</span>
           </label>
           <label class="filter-item">
-            <input type="checkbox" id="cb-open">
+            <input type="checkbox" id="cb-open" />
             <span class="checkbox-box">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
             <span class="filter-label">Open Studio</span>
           </label>
           <label class="filter-item">
-            <input type="checkbox" id="cb-member">
+            <input type="checkbox" id="cb-member" />
             <span class="checkbox-box">
               <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
             </span>
@@ -578,28 +577,35 @@
       <div class="divider"></div>
 
       <!-- Count -->
-      <div id="count-label">
-        <span id="count-num">—</span> Studios
-      </div>
+      <p id="count-label"><strong id="count-num">—</strong> studios</p>
 
       <!-- Legend -->
       <div>
-        <div class="filter-heading" style="margin-bottom:8px;">Legend</div>
+        <p class="section-label">Legend</p>
         <div class="legend">
           <div class="legend-item">
-            <div class="legend-dot default"></div>
-            <span class="legend-text">Studio / school</span>
+            <div class="legend-dot terracotta"></div>
+            <span class="legend-text">Open studio access</span>
           </div>
           <div class="legend-item">
-            <div class="legend-dot accent"></div>
-            <span class="legend-text">Open studio access</span>
+            <div class="legend-dot teal"></div>
+            <span class="legend-text">Classes / gallery</span>
           </div>
         </div>
       </div>
 
+      <!-- Credit -->
+      <div id="sidebar-footer">
+        <p>
+          A community resource by <a href="https://roysclay.co">Roy's Clay Co.</a>
+          Found a missing studio?
+          <a href="mailto:hi@roysclay.co">Email us.</a>
+        </p>
+      </div>
+
     </aside>
 
-    <!-- Map container -->
+    <!-- Map -->
     <div style="position:relative; flex:1;">
       <div id="map"></div>
       <div id="no-results">
@@ -608,15 +614,13 @@
       </div>
     </div>
 
-  </div><!-- /body -->
-</div><!-- /app -->
+  </div>
+</div>
 
-<!-- Mobile drawer overlay -->
+<!-- Mobile overlay + button -->
 <div id="drawer-overlay"></div>
-
-<!-- Mobile filter toggle -->
 <button id="filter-toggle" aria-label="Open filters">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
     <line x1="4" y1="6" x2="20" y2="6"/>
     <line x1="8" y1="12" x2="20" y2="12"/>
     <line x1="12" y1="18" x2="20" y2="18"/>
@@ -628,42 +632,41 @@
 (function () {
   'use strict';
 
-  // ── Map init ─────────────────────────────────────────────────────────
+  // ── Map ─────────────────────────────────────────────────────────────
   const map = L.map('map', {
     center: [42.4, -71.8],
     zoom: 8,
     zoomControl: true,
-    attributionControl: true,
   });
 
-  // CartoDB Dark Matter tiles — free, no API key, matches palette
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  // CartoDB Positron — clean light tiles, matches the site's pale aesthetic
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19,
   }).addTo(map);
 
-  // ── Marker cluster group ──────────────────────────────────────────────
+  // ── Cluster group ────────────────────────────────────────────────────
   const clusterGroup = L.markerClusterGroup({
     maxClusterRadius: 50,
-    iconCreateFunction: function (cluster) {
-      const count = cluster.getChildCount();
+    iconCreateFunction(cluster) {
       return L.divIcon({
-        html: `<div>${count}</div>`,
+        html: `<div>${cluster.getChildCount()}</div>`,
         className: 'marker-cluster',
-        iconSize: [34, 34],
+        iconSize: [32, 32],
       });
     },
   });
   map.addLayer(clusterGroup);
 
-  // ── Custom marker icon ────────────────────────────────────────────────
+  // ── Marker icons ─────────────────────────────────────────────────────
   function makeIcon(hasOpenStudio) {
-    const fill   = hasOpenStudio ? '#F27A3E' : '#F0EDE8';
-    const stroke = '#0D0D0D';
+    // Terracotta for open studio, dark teal for classes-only / gallery
+    const fill   = hasOpenStudio ? '#c66b3b' : '#28495c';
+    const stroke = '#fafafa';
     return L.divIcon({
       className: '',
-      html: `<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      html: `<svg width="16" height="16" viewBox="0 0 16 16">
         <circle cx="8" cy="8" r="5.5" fill="${fill}" stroke="${stroke}" stroke-width="2"/>
       </svg>`,
       iconSize: [16, 16],
@@ -672,12 +675,12 @@
     });
   }
 
-  // ── Popup builder ─────────────────────────────────────────────────────
+  // ── Popup builder ────────────────────────────────────────────────────
   function buildPopup(p) {
     const tags = [
-      { key: 'classes',       label: 'Classes' },
-      { key: 'open_studio',   label: 'Open Studio' },
-      { key: 'member_studios',label: 'Members' },
+      { key: 'classes',        label: 'Classes' },
+      { key: 'open_studio',    label: 'Open Studio' },
+      { key: 'member_studios', label: 'Members' },
     ];
 
     const tagsHtml = tags
@@ -685,17 +688,14 @@
       .join('');
 
     const notesHtml = p.notes
-      ? `<div class="popup-divider"></div><p class="popup-notes">${p.notes}</p>`
+      ? `<p class="popup-notes">${p.notes}</p>`
       : '';
 
-    const websiteBtn = p.website
-      ? `<a href="${p.website}" target="_blank" rel="noopener" class="popup-btn">
-           ↗ Website
-         </a>`
-      : '';
-
-    const phoneHtml = p.phone
-      ? `<p class="popup-phone">${p.phone}</p>`
+    const actionsHtml = (p.website || p.phone)
+      ? `<div class="popup-actions">
+           ${p.website ? `<a href="${p.website}" target="_blank" rel="noopener" class="popup-btn">↗ Website</a>` : ''}
+           ${p.phone   ? `<span class="popup-phone">${p.phone}</span>` : ''}
+         </div>`
       : '';
 
     return `<div class="popup-inner">
@@ -703,31 +703,27 @@
       <div class="popup-address">${p.address}</div>
       <div class="popup-tags">${tagsHtml}</div>
       ${notesHtml}
-      ${websiteBtn || phoneHtml
-        ? `<div class="popup-divider"></div>
-           <div class="popup-actions">${websiteBtn}</div>
-           ${phoneHtml}`
-        : ''}
+      ${actionsHtml}
     </div>`;
   }
 
-  // ── State ─────────────────────────────────────────────────────────────
-  const allMarkers = []; // { marker, props }
-  const countEl    = document.getElementById('count-num');
-  const noResults  = document.getElementById('no-results');
-  const searchEl   = document.getElementById('search');
-  const cbClasses  = document.getElementById('cb-classes');
-  const cbOpen     = document.getElementById('cb-open');
-  const cbMember   = document.getElementById('cb-member');
+  // ── State ────────────────────────────────────────────────────────────
+  const allMarkers = [];
+  const countEl   = document.getElementById('count-num');
+  const noResults = document.getElementById('no-results');
+  const searchEl  = document.getElementById('search');
+  const cbClasses = document.getElementById('cb-classes');
+  const cbOpen    = document.getElementById('cb-open');
+  const cbMember  = document.getElementById('cb-member');
 
-  // ── Filter logic ──────────────────────────────────────────────────────
+  // ── Filter ───────────────────────────────────────────────────────────
   function applyFilters() {
     const query       = searchEl.value.trim().toLowerCase();
     const wantClasses = cbClasses.checked;
     const wantOpen    = cbOpen.checked;
     const wantMember  = cbMember.checked;
 
-    let visible = 0;
+    let count = 0;
     clusterGroup.clearLayers();
 
     allMarkers.forEach(({ marker, props }) => {
@@ -739,57 +735,48 @@
 
       if (nameMatch && classMatch && openMatch && memberMatch) {
         clusterGroup.addLayer(marker);
-        visible++;
+        count++;
       }
     });
 
-    countEl.textContent = visible;
-    noResults.style.display = visible === 0 ? 'block' : 'none';
+    countEl.textContent = count;
+    noResults.style.display = count === 0 ? 'block' : 'none';
   }
 
-  // ── Load GeoJSON ──────────────────────────────────────────────────────
+  // ── Load data ────────────────────────────────────────────────────────
   fetch('studios.json')
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
       data.features.forEach(feature => {
         const [lon, lat] = feature.geometry.coordinates;
-        const props      = feature.properties;
-        const marker     = L.marker([lat, lon], {
-          icon: makeIcon(props.open_studio),
-        });
-        marker.bindPopup(buildPopup(props), {
-          maxWidth: 280,
-          minWidth: 260,
-        });
+        const props = feature.properties;
+        const marker = L.marker([lat, lon], { icon: makeIcon(props.open_studio) });
+        marker.bindPopup(buildPopup(props), { maxWidth: 280, minWidth: 260 });
         allMarkers.push({ marker, props });
       });
-
       applyFilters();
     })
     .catch(err => {
-      console.error('Failed to load studios.json:', err);
+      console.error('Could not load studios.json:', err);
       countEl.textContent = '!';
-      noResults.querySelector('p').textContent = 'Failed to load studios';
+      noResults.querySelector('p').textContent = 'Could not load studios';
       noResults.querySelector('small').textContent = err.message;
       noResults.style.display = 'block';
     });
 
-  // ── Event listeners ───────────────────────────────────────────────────
+  // ── Events ───────────────────────────────────────────────────────────
   searchEl.addEventListener('input', applyFilters);
   cbClasses.addEventListener('change', applyFilters);
   cbOpen.addEventListener('change', applyFilters);
   cbMember.addEventListener('change', applyFilters);
 
-  // ── Mobile drawer ─────────────────────────────────────────────────────
-  const sidebar     = document.getElementById('sidebar');
-  const overlay     = document.getElementById('drawer-overlay');
-  const filterBtn   = document.getElementById('filter-toggle');
-  let drawerOpen    = false;
+  // ── Mobile drawer ────────────────────────────────────────────────────
+  const sidebar   = document.getElementById('sidebar');
+  const overlay   = document.getElementById('drawer-overlay');
+  const filterBtn = document.getElementById('filter-toggle');
+  let drawerOpen  = false;
 
-  function setupMobileDrawer() {
+  function setupMobile() {
     if (window.innerWidth <= 768) {
       sidebar.classList.add('drawer');
       overlay.style.display = 'block';
@@ -801,31 +788,26 @@
     }
   }
 
-  function openDrawer() {
-    drawerOpen = true;
-    sidebar.classList.add('open');
-    overlay.classList.add('visible');
-    filterBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-    </svg> Close`;
-  }
+  filterBtn.addEventListener('click', () => {
+    drawerOpen = !drawerOpen;
+    sidebar.classList.toggle('open', drawerOpen);
+    overlay.classList.toggle('visible', drawerOpen);
+    filterBtn.innerHTML = drawerOpen
+      ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Close`
+      : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg> Filter`;
+  });
 
-  function closeDrawer() {
+  overlay.addEventListener('click', () => {
     drawerOpen = false;
     sidebar.classList.remove('open');
     overlay.classList.remove('visible');
-    filterBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/>
-    </svg> Filter`;
-  }
+    filterBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg> Filter`;
+  });
 
-  filterBtn.addEventListener('click', () => drawerOpen ? closeDrawer() : openDrawer());
-  overlay.addEventListener('click', closeDrawer);
+  setupMobile();
+  window.addEventListener('resize', setupMobile);
 
-  setupMobileDrawer();
-  window.addEventListener('resize', setupMobileDrawer);
-
-})();
+}());
 </script>
 </body>
 </html>
