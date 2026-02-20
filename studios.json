@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.0890, 42.3885] },
+      "properties": {
+        "name": "Mudflat Studio",
+        "address": "149 Broadway, Somerville, MA",
+        "website": "https://mudflat.org",
+        "phone": "(617) 628-0589",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "notes": "Community ceramics studio offering classes for all levels, open studio time, and member artists. One of the oldest pottery studios in the Boston area."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.1056, 42.3642] },
+      "properties": {
+        "name": "The Clay School",
+        "address": "130 Bishop Allen Dr, Cambridge, MA",
+        "website": "https://theclayschool.com",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "notes": "Community ceramics studio in Cambridge offering wheel throwing, hand building, and glaze classes for all skill levels."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.1227, 42.3736] },
+      "properties": {
+        "name": "Cambridge Center for Adult Education",
+        "address": "42 Brattle St, Cambridge, MA",
+        "website": "https://ccae.org",
+        "phone": "(617) 547-6789",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Long-running adult education center in Harvard Square offering ceramics and pottery classes alongside other arts courses."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.1018, 42.3838] },
+      "properties": {
+        "name": "Artisan's Asylum",
+        "address": "10 Tyler St, Somerville, MA",
+        "website": "https://artisansasylum.com",
+        "phone": "(617) 616-6943",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "notes": "Large maker community space with a dedicated ceramics studio. Offers classes and open studio membership."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.0442, 42.3530] },
+      "properties": {
+        "name": "Society of Arts and Crafts",
+        "address": "100 Pier 4 Blvd, Boston, MA",
+        "website": "https://societyofcrafts.org",
+        "phone": "(617) 266-1810",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "America's oldest nonprofit craft organization. Gallery and shop selling handmade ceramics and other fine crafts by juried artists."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.0991, 42.3363] },
+      "properties": {
+        "name": "MassArt Continuing Education",
+        "address": "621 Huntington Ave, Boston, MA",
+        "website": "https://massart.edu/continuing-education",
+        "phone": "(617) 879-7000",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Massachusetts College of Art and Design continuing education program offering ceramics and sculpture classes to the public."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.1568, 42.4149] },
+      "properties": {
+        "name": "Arlington Center for the Arts",
+        "address": "41 Foster St, Arlington, MA",
+        "website": "https://acarts.org",
+        "phone": "(781) 648-6220",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Community arts center offering ceramics classes for adults and youth in Arlington."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.2073, 42.3513] },
+      "properties": {
+        "name": "New Art Center",
+        "address": "61 Washington Park, Newtonville, MA",
+        "website": "https://newartcenter.org",
+        "phone": "(617) 964-3424",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "notes": "Community arts center in Newton offering wheel throwing, hand building, and raku ceramics classes and studio membership."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.1218, 42.3318] },
+      "properties": {
+        "name": "Brookline Arts Center",
+        "address": "86 Monmouth St, Brookline, MA",
+        "website": "https://brooklineartscenter.com",
+        "phone": "(617) 566-4452",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Community arts center offering pottery and ceramics classes for adults and children in Brookline."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.8566, 42.4982] },
+      "properties": {
+        "name": "North Shore Art Center",
+        "address": "11 Pleasant St, Marblehead, MA",
+        "website": "https://northshorearts.org",
+        "phone": "(781) 631-5515",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Arts center on the North Shore offering pottery and ceramics classes alongside fine arts instruction."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.8802, 42.5584] },
+      "properties": {
+        "name": "Montserrat College of Art",
+        "address": "23 Essex St, Beverly, MA",
+        "website": "https://montserrat.edu",
+        "phone": "(978) 921-4242",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Visual arts college offering community ceramics courses through its continuing education program."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.8231, 42.2409] },
+      "properties": {
+        "name": "South Shore Art Center",
+        "address": "119 Ripley Rd, Cohasset, MA",
+        "website": "https://southshoreart.org",
+        "phone": "(781) 383-2787",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "notes": "Established arts center offering ceramics and pottery classes, open studio time, and gallery exhibitions."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.4162, 42.2792] },
+      "properties": {
+        "name": "Danforth Art Museum School",
+        "address": "123 Union Ave, Framingham, MA",
+        "website": "https://danforthart.org",
+        "phone": "(508) 620-0050",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "notes": "Art school and museum offering ceramics and pottery classes for adults and children in Framingham."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.3495, 42.4604] },
+      "properties": {
+        "name": "The Pottery Studio",
+        "address": "84 Thoreau St, Concord, MA",
+        "website": "",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "notes": "Community pottery studio in Concord offering wheel and hand building classes and open studio membership."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.8023, 42.2629] },
+      "properties": {
+        "name": "Worcester Center for Crafts",
+        "address": "25 Sagamore Rd, Worcester, MA",
+        "website": "https://worcestercraftcenter.org",
+        "phone": "(508) 753-8183",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "notes": "One of the largest craft schools in New England. Offers extensive ceramics programming, open studio, and resident artist studios."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-72.6342, 42.3251] },
+      "properties": {
+        "name": "Northampton Center for the Arts",
+        "address": "17 New South St, Northampton, MA",
+        "website": "https://nohoarts.org",
+        "phone": "(413) 584-7327",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": true,
+        "notes": "Arts center in downtown Northampton with ceramics studio space and classes in the Pioneer Valley."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-72.7388, 42.6014] },
+      "properties": {
+        "name": "Digging Dog Pottery",
+        "address": "23 Mechanic St, Shelburne Falls, MA",
+        "website": "https://diggingdogpottery.com",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "notes": "Working pottery studio in Shelburne Falls offering classes and open studio. Beautiful rural setting in the Pioneer Valley."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.4548, 42.9956] },
+      "properties": {
+        "name": "Studio 550",
+        "address": "550 Elm St, Manchester, NH",
+        "website": "https://studio550.org",
+        "phone": "(603) 668-6656",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "notes": "Regional ceramics studio just over the NH border. Included as a resource for potters in northern MA. Classes, open studio, and member space."
+      }
+    }
+  ]
+}
