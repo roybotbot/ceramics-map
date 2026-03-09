@@ -1,44 +1,17 @@
-# MA Pottery Studios
+# Massachusetts Ceramics Map
 
-A static map of pottery studios, schools, and galleries in Massachusetts. Built with Leaflet.js + CartoDB dark tiles. No backend, no build step.
+An interactive map of 170 pottery and ceramics studios across Massachusetts. Search by name, filter by category, tap for details.
 
----
-
-## Running locally
-
-`fetch()` doesn't work over `file://` URLs (CORS). You need a local server. Pick any one:
-
-```bash
-# Python (built in — recommended)
-python3 -m http.server 8000
-
-# Node (if installed)
-npx serve .
-
-# PHP (if installed)
-php -S localhost:8000
-```
-
-Then open **http://localhost:8000** in your browser.
+**Live at [roysclay.co/ceramics-map/](https://roysclay.co/ceramics-map/)**
 
 ---
 
-## Re-geocoding studios
+## Adding a Studio
 
-The `studios.json` file is the source of truth. `geocode.py` is for bulk re-geocoding only.
+### Option 1: Pull request (preferred)
 
-```bash
-pip3 install requests
-python3 geocode.py
-```
-
-This hits Nominatim (OSM's free geocoder) — takes ~20 seconds due to the mandatory 1-second rate limit between requests.
-
----
-
-## Adding a new studio
-
-Edit `studios.json` directly. Copy an existing feature block and fill in the values:
+1. Fork this repo
+2. Add an entry to `studios.json` (copy an existing one):
 
 ```json
 {
@@ -46,38 +19,69 @@ Edit `studios.json` directly. Copy an existing feature block and fill in the val
   "geometry": { "type": "Point", "coordinates": [-71.0890, 42.3885] },
   "properties": {
     "name": "Studio Name",
-    "address": "123 Main St, City, MA",
+    "address": "123 Main St, City, MA 01234",
     "website": "https://example.com",
     "phone": "(555) 555-5555",
     "classes": true,
     "open_studio": false,
     "member_studios": false,
-    "notes": "Short description of the studio."
+    "gallery": false,
+    "supplies": false,
+    "artist_studio": false,
+    "notes": "Short description."
   }
 }
 ```
 
-**Coordinate order:** `[longitude, latitude]` — longitude first (common GeoJSON gotcha).
+3. Open a pull request
 
-To find coordinates for an address: go to [nominatim.openstreetmap.org](https://nominatim.openstreetmap.org), search the address, click the result, and use the lat/lon shown.
+**Coordinate order is `[longitude, latitude]`** — longitude first (GeoJSON standard). Find coordinates at [nominatim.openstreetmap.org](https://nominatim.openstreetmap.org). If you don't know the coordinates, put `[0, 0]` and we'll geocode it.
+
+### Option 2: Open an issue
+
+Use the [Add a Studio](../../issues/new?template=add-studio.yml) issue template. Fill in the details and we'll add it.
+
+### Option 3: Google Form
+
+Coming soon — a simple form for non-technical submissions.
 
 ---
 
-## Property reference
+## Property Reference
 
 | Property | Type | Meaning |
 |---|---|---|
-| `classes` | boolean | Teaches pottery/ceramics classes to the public |
+| `classes` | boolean | Teaches pottery/ceramics classes |
 | `open_studio` | boolean | Members can use the studio independently |
-| `member_studios` | boolean | Run by/for member artists (co-op or collective) |
+| `member_studios` | boolean | Co-op or collective run by member artists |
+| `gallery` | boolean | Has a gallery showing ceramics work |
+| `supplies` | boolean | Sells pottery supplies or clay |
+| `artist_studio` | boolean | Individual artist's working studio |
+
+A studio should have at least one category set to `true`.
 
 ---
 
-## Deploy to Cloudways
+## Running Locally
 
-See `docs/plans/2026-02-20-pottery-map-design.md` for full Cloudways deployment instructions (SFTP, Git, rsync options).
+`fetch()` won't work over `file://` URLs. Use a local server:
 
-Short version: upload `index.html` + `studios.json` to your app's `public_html` folder via SFTP.
+```bash
+python3 -m http.server 8000
+```
+
+Open **http://localhost:8000**.
+
+---
+
+## Scripts
+
+| Script | Purpose |
+|---|---|
+| `sheets_to_json.py` | Imports new entries from a Google Sheet into `studios.json` |
+| `check_urls.py` | Checks every studio website URL for dead links |
+| `scrape_places.py` | Google Places API scraper for discovering new studios |
+| `geocode.py` | Bulk geocoder using Nominatim (OpenStreetMap) |
 
 ---
 
@@ -85,6 +89,42 @@ Short version: upload `index.html` + `studios.json` to your app's `public_html` 
 
 - [Leaflet.js](https://leafletjs.com/) 1.9.4 — map rendering
 - [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) 1.5.3 — marker clustering
-- [CartoDB Dark Matter](https://carto.com/basemaps/) — dark map tiles (free, no API key)
-- [VT323](https://fonts.google.com/specimen/VT323) + [Inter](https://fonts.google.com/specimen/Inter) — typography
-- Dark Mono Digital UI system — design language
+- [CartoDB Positron](https://carto.com/basemaps/) — light map tiles (free, no API key)
+- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) — typography
+- No build step, no framework, no backend
+
+---
+
+## TODO
+
+- [ ] Move scripts to `scripts/` directory, update paths
+- [ ] Write `CONTRIBUTING.md`
+- [ ] Write `validate.py` (JSON schema, coordinate bounds, duplicate check)
+- [ ] Add GitHub Actions:
+  - [ ] `validate-pr.yml` — validate `studios.json` on PRs
+  - [ ] `import-sheet-submissions.yml` — Google Sheet → PR pipeline
+  - [ ] `check-urls.yml` — weekly dead link check
+  - [ ] Deploy action to push to roysclay.co on merge
+- [ ] Create GitHub Issue template (`add-studio.yml`)
+- [ ] Create PR template
+- [ ] Set up Google Form for non-technical submissions
+- [ ] Fix favicon path (currently `../assets/img/favicon.svg`, relative to roysclay.co subdirectory)
+- [ ] Add "Contribute on GitHub" link to map sidebar
+- [ ] Consider syncing `--accent` color to `oklch(48%)` (matches roysclay.co contrast fix)
+- [ ] Update `check_urls.py` path from `ceramics-map/studios.json` → `studios.json`
+- [ ] Update `sheets_to_json.py` to create PRs instead of direct commits
+- [ ] Remove `ceramics-map/` from `roysclayco-website` after standalone deploy works
+
+---
+
+## Docs
+
+- [`docs/plan-standalone-repo.md`](docs/plan-standalone-repo.md) — full plan for the repo split and community submissions
+- [`docs/site-updates-and-migration.md`](docs/site-updates-and-migration.md) — what changed on roysclay.co, file-by-file migration guide
+- [`docs/handoff.md`](docs/handoff.md) — project context and current state
+
+---
+
+## License
+
+Data in `studios.json` is community-contributed. Code is MIT.
