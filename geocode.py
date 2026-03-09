@@ -17,10 +17,13 @@ import requests
 USER_AGENT = "ma-pottery-map/1.0 contact@example.com"
 
 # ─── Studio data ──────────────────────────────────────────────────────────────
-# Fields: name, address, website, phone, classes, open_studio, member_studios, notes
-# classes       = teaches pottery/ceramics classes to the public
-# open_studio   = members can use studio independently (open studio time)
+# Fields: name, address, website, phone, classes, open_studio, member_studios, gallery, supplies, notes
+# classes        = teaches pottery/ceramics classes to the public
+# open_studio    = members can use studio independently (open studio time)
 # member_studios = run by/for member artists (co-op or collective model)
+# gallery        = sells or exhibits finished ceramic work
+# supplies       = sells pottery supplies (clay, glazes, tools)
+# artist_studio  = individual artist's studio where they sell their own pottery
 
 STUDIOS = [
     # ── Somerville / Cambridge ─────────────────────────────────────────────
@@ -268,10 +271,13 @@ def build_geojson(studios: list[dict]) -> dict:
                 "address": studio["address"],
                 "website": studio.get("website", ""),
                 "phone": studio.get("phone", ""),
-                "classes": studio.get("classes", False),
-                "open_studio": studio.get("open_studio", False),
+                "classes":        studio.get("classes",        False),
+                "open_studio":    studio.get("open_studio",    False),
                 "member_studios": studio.get("member_studios", False),
-                "notes": studio.get("notes", ""),
+                "gallery":        studio.get("gallery",        False),
+                "supplies":       studio.get("supplies",       False),
+                "artist_studio":  studio.get("artist_studio",  False),
+                "notes":          studio.get("notes",          ""),
             }
         }
         features.append(feature)

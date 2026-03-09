@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>MA Pottery Studios Map | Roy's Clay Co.</title>
+  <title>Massachusetts Ceramics Map | Roy's Clay Co.</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
   <!-- Space Grotesk — matches roysclay.co exactly -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -32,6 +33,18 @@
 
       --sidebar-width: 300px;
       --header-height: 72px;
+    }
+
+    @supports (color: oklch(0 0 0)) {
+      :root {
+        --bg:         oklch(98.5% 0 0);
+        --text:       oklch(14% 0 0);
+        --text-light: oklch(44% 0 0);
+        --accent:     oklch(58% 0.13 44);
+        --card-bg:    oklch(94% 0 0);
+        --accent-2:   oklch(33% 0.05 229);
+        --border:     oklch(0% 0 0 / 0.08);
+      }
     }
 
     /* ── Reset ─────────────────────────────────────────────────────── */
@@ -147,7 +160,7 @@
       font-family: var(--font);
       font-size: 0.875rem;
       font-weight: 400;
-      padding: 10px 12px 10px 36px;
+      padding: 10px 36px 10px 36px;
       border: 1px solid transparent;
       border-radius: 6px;
       outline: none;
@@ -155,6 +168,28 @@
     }
     #search::placeholder { color: var(--text-light); }
     #search:focus { border-color: rgba(0,0,0,0.15); }
+    #search-clear {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s, color 0.15s;
+    }
+    #search-clear.visible {
+      opacity: 0.45;
+      pointer-events: auto;
+    }
+    #search-clear:hover { opacity: 1; color: var(--text); }
 
     /* Divider */
     .divider { height: 1px; background: var(--border); }
@@ -288,37 +323,43 @@
     }
     .leaflet-control-zoom a:last-child { border-bottom: none !important; }
     .leaflet-control-attribution {
-      background: rgba(250,250,250,0.85) !important;
+      background: rgba(250,250,250,0.85) !important; /* fallback */
       color: rgba(0,0,0,0.35) !important;
       font-family: var(--font) !important;
       font-size: 10px !important;
       font-weight: 300 !important;
     }
     .leaflet-control-attribution a { color: rgba(0,0,0,0.4) !important; }
+    @supports (color: oklch(0 0 0)) {
+      .leaflet-control-attribution {
+        background: oklch(98.5% 0 0 / 0.85) !important;
+      }
+    }
 
     /* Clusters */
-    .marker-cluster-small,
-    .marker-cluster-medium,
-    .marker-cluster-large { background: none !important; }
-    .marker-cluster-small div,
-    .marker-cluster-medium div,
-    .marker-cluster-large div {
-      background: white !important;
-      border: 1.5px solid var(--accent) !important;
+    .marker-cluster { background: none !important; }
+    .marker-cluster div {
+      background: var(--accent) !important;
+      border: none !important;
       border-radius: 50% !important;
-      color: var(--text) !important;
+      color: white !important;
       font-family: var(--font) !important;
-      font-size: 13px !important;
-      font-weight: 500 !important;
+      font-weight: 700 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: 32px !important;
-      height: 32px !important;
       margin: 0 !important;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
     }
-    .marker-cluster { width: 32px !important; height: 32px !important; }
+    /* small: < 10 */
+    .marker-cluster.cluster-sm { width: 26px !important; height: 26px !important; }
+    .marker-cluster.cluster-sm div { width: 26px !important; height: 26px !important; font-size: 11px !important; }
+    /* medium: 10–49 */
+    .marker-cluster.cluster-md { width: 34px !important; height: 34px !important; }
+    .marker-cluster.cluster-md div { width: 34px !important; height: 34px !important; font-size: 13px !important; }
+    /* large: 50+ */
+    .marker-cluster.cluster-lg { width: 42px !important; height: 42px !important; }
+    .marker-cluster.cluster-lg div { width: 42px !important; height: 42px !important; font-size: 15px !important; }
 
     /* ── Popup ─────────────────────────────────────────────────────── */
     .leaflet-popup-content-wrapper {
@@ -378,6 +419,11 @@
     .popup-tag.active {
       background: rgba(198, 107, 59, 0.1);
       color: var(--accent);
+    }
+    @supports (color: oklch(0 0 0)) {
+      .popup-tag.active {
+        background: oklch(58% 0.13 44 / 0.1);
+      }
     }
     .popup-notes {
       font-size: 0.8rem;
@@ -445,6 +491,9 @@
       transition: transform 0.2s, background 0.3s;
     }
     #filter-toggle:hover { background: #d4764a; }
+    @supports (color: oklch(0 0 0)) {
+      #filter-toggle:hover { background: oklch(63% 0.13 44); }
+    }
     #filter-toggle:active { transform: scale(0.97); }
 
     /* ── Mobile drawer ─────────────────────────────────────────────── */
@@ -512,6 +561,21 @@
       color: var(--text-light);
     }
   </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://matomo.roy.wtf/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 </head>
 <body>
 <div id="app">
@@ -519,8 +583,8 @@
   <!-- ── Header ──────────────────────────────────────────────────────── -->
   <header id="header">
     <div id="header-left">
-      <h1>MA Pottery Studios</h1>
-      <span id="header-tagline">Massachusetts ceramics map</span>
+      <h1>Massachusetts Ceramics Map</h1>
+      <span id="header-tagline">Find pottery &amp; ceramics classes across the state</span>
     </div>
     <a href="https://roysclay.co" id="header-back">
       ← Roy's Clay Co.
@@ -541,6 +605,11 @@
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
           </svg>
           <input id="search" type="text" placeholder="studio name or city..." autocomplete="off" />
+          <button id="search-clear" aria-label="Clear search">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -548,28 +617,37 @@
 
       <!-- Filters -->
       <div>
-        <p class="section-label">Filter</p>
-        <div class="filter-group">
+        <p class="section-label">Filter by Type</p>
+        <div class="filter-group" id="filter-group">
           <label class="filter-item">
-            <input type="checkbox" id="cb-classes" />
-            <span class="checkbox-box">
-              <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
-            </span>
+            <input type="checkbox" data-filter="classes" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
             <span class="filter-label">Classes</span>
           </label>
           <label class="filter-item">
-            <input type="checkbox" id="cb-open" />
-            <span class="checkbox-box">
-              <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
-            </span>
+            <input type="checkbox" data-filter="open_studio" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
             <span class="filter-label">Open Studio</span>
           </label>
           <label class="filter-item">
-            <input type="checkbox" id="cb-member" />
-            <span class="checkbox-box">
-              <svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg>
-            </span>
+            <input type="checkbox" data-filter="member_studios" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
             <span class="filter-label">Member Studios</span>
+          </label>
+          <label class="filter-item">
+            <input type="checkbox" data-filter="gallery" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
+            <span class="filter-label">Gallery</span>
+          </label>
+          <label class="filter-item">
+            <input type="checkbox" data-filter="supplies" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
+            <span class="filter-label">Supplies</span>
+          </label>
+          <label class="filter-item">
+            <input type="checkbox" data-filter="artist_studio" checked />
+            <span class="checkbox-box"><svg viewBox="0 0 10 10"><polyline points="1.5 5 4 7.5 8.5 2.5"/></svg></span>
+            <span class="filter-label">Artist Studio</span>
           </label>
         </div>
       </div>
@@ -579,26 +657,16 @@
       <!-- Count -->
       <p id="count-label"><strong id="count-num">—</strong> studios</p>
 
-      <!-- Legend -->
-      <div>
-        <p class="section-label">Legend</p>
-        <div class="legend">
-          <div class="legend-item">
-            <div class="legend-dot terracotta"></div>
-            <span class="legend-text">Open studio access</span>
-          </div>
-          <div class="legend-item">
-            <div class="legend-dot teal"></div>
-            <span class="legend-text">Classes / gallery</span>
-          </div>
-        </div>
-      </div>
+
 
       <!-- Credit -->
       <div id="sidebar-footer">
         <p>
-          A community resource by <a href="https://roysclay.co">Roy's Clay Co.</a>
-          Found a missing studio?
+          Studio information may be incomplete or out of date. We make no guarantees about accuracy — always verify directly with the studio before visiting.
+        </p>
+        <p style="margin-top: 0.5rem;">
+          A community resource by <a href="https://roysclay.co">Roy's Clay Co.</a><br />
+          Missing studio?
           <a href="mailto:hi@roysclay.co">Email us.</a>
         </p>
       </div>
@@ -632,10 +700,17 @@
 (function () {
   'use strict';
 
+  // ── Color constants (oklch with hex fallback) ────────────────────────
+  const supportsOklch = typeof CSS !== 'undefined' && CSS.supports('color', 'oklch(0 0 0)');
+  const C_ACCENT = supportsOklch ? 'oklch(58% 0.13 44)' : '#c66b3b';
+  const C_BG     = supportsOklch ? 'oklch(98.5% 0 0)'   : '#fafafa';
+
   // ── Map ─────────────────────────────────────────────────────────────
+  const isMobile = window.innerWidth <= 768;
   const map = L.map('map', {
     center: [42.4, -71.8],
-    zoom: 8,
+    zoom: isMobile ? 7.5 : 8,
+    zoomSnap: 0.5,
     zoomControl: true,
   });
 
@@ -646,14 +721,34 @@
     maxZoom: 19,
   }).addTo(map);
 
+  // ── Massachusetts boundary ───────────────────────────────────────────
+  fetch('ma-boundary.geojson')
+    .then(r => r.json())
+    .then(data => {
+      L.geoJSON(data, {
+        style: {
+          fillColor:   C_ACCENT,
+          fillOpacity: 0.06,
+          color:       C_ACCENT,
+          weight:      1.5,
+          opacity:     0.25,
+        },
+        interactive: false,
+      }).addTo(map);
+    });
+
   // ── Cluster group ────────────────────────────────────────────────────
   const clusterGroup = L.markerClusterGroup({
     maxClusterRadius: 50,
+    showCoverageOnHover: false,
     iconCreateFunction(cluster) {
+      const count = cluster.getChildCount();
+      const sizeClass = count < 10 ? 'cluster-sm' : count < 50 ? 'cluster-md' : 'cluster-lg';
+      const size     = count < 10 ? 26 : count < 50 ? 34 : 42;
       return L.divIcon({
-        html: `<div>${cluster.getChildCount()}</div>`,
-        className: 'marker-cluster',
-        iconSize: [32, 32],
+        html: `<div>${count}</div>`,
+        className: `marker-cluster ${sizeClass}`,
+        iconSize: [size, size],
       });
     },
   });
@@ -661,9 +756,8 @@
 
   // ── Marker icons ─────────────────────────────────────────────────────
   function makeIcon(hasOpenStudio) {
-    // Terracotta for open studio, dark teal for classes-only / gallery
-    const fill   = hasOpenStudio ? '#c66b3b' : '#28495c';
-    const stroke = '#fafafa';
+    const fill   = C_ACCENT;
+    const stroke = C_BG;
     return L.divIcon({
       className: '',
       html: `<svg width="16" height="16" viewBox="0 0 16 16">
@@ -681,10 +775,14 @@
       { key: 'classes',        label: 'Classes' },
       { key: 'open_studio',    label: 'Open Studio' },
       { key: 'member_studios', label: 'Members' },
+      { key: 'gallery',        label: 'Gallery' },
+      { key: 'supplies',       label: 'Supplies' },
+      { key: 'artist_studio',  label: 'Artist Studio' },
     ];
 
     const tagsHtml = tags
-      .map(t => `<span class="popup-tag${p[t.key] ? ' active' : ''}">${t.label}</span>`)
+      .filter(t => p[t.key])
+      .map(t => `<span class="popup-tag active">${t.label}</span>`)
       .join('');
 
     const notesHtml = p.notes
@@ -712,35 +810,61 @@
   const countEl   = document.getElementById('count-num');
   const noResults = document.getElementById('no-results');
   const searchEl  = document.getElementById('search');
-  const cbClasses = document.getElementById('cb-classes');
-  const cbOpen    = document.getElementById('cb-open');
-  const cbMember  = document.getElementById('cb-member');
+  const clearBtn  = document.getElementById('search-clear');
 
   // ── Filter ───────────────────────────────────────────────────────────
+  const filterCheckboxes = document.querySelectorAll('#filter-group input[type="checkbox"]');
+  let zoomDebounce = null;
+
+  function getActiveFilters() {
+    const active = [];
+    filterCheckboxes.forEach(cb => {
+      if (cb.checked) active.push(cb.dataset.filter);
+    });
+    return active;
+  }
+
   function applyFilters() {
-    const query       = searchEl.value.trim().toLowerCase();
-    const wantClasses = cbClasses.checked;
-    const wantOpen    = cbOpen.checked;
-    const wantMember  = cbMember.checked;
+    const query = searchEl.value.trim().toLowerCase();
+    const activeFilters = getActiveFilters();
 
     let count = 0;
+    const visibleLatLngs = [];
     clusterGroup.clearLayers();
 
     allMarkers.forEach(({ marker, props }) => {
-      const nameMatch   = props.name.toLowerCase().includes(query)
-                       || props.address.toLowerCase().includes(query);
-      const classMatch  = !wantClasses || props.classes;
-      const openMatch   = !wantOpen    || props.open_studio;
-      const memberMatch = !wantMember  || props.member_studios;
+      const nameMatch = props.name.toLowerCase().includes(query)
+                     || props.address.toLowerCase().includes(query);
 
-      if (nameMatch && classMatch && openMatch && memberMatch) {
+      const filterMatch = activeFilters.length > 0 &&
+        activeFilters.some(f => props[f]);
+
+      if (filterMatch && nameMatch) {
         clusterGroup.addLayer(marker);
+        visibleLatLngs.push(marker.getLatLng());
         count++;
       }
     });
 
     countEl.textContent = count;
     noResults.style.display = count === 0 ? 'block' : 'none';
+    clearBtn.classList.toggle('visible', query.length > 0);
+
+    // Markers update instantly; zoom animation waits until typing pauses
+    clearTimeout(zoomDebounce);
+    zoomDebounce = setTimeout(() => {
+      if (query && count === 1) {
+        map.setView(visibleLatLngs[0], 13, { animate: true });
+      } else if (query && count > 1) {
+        map.fitBounds(L.latLngBounds(visibleLatLngs), {
+          padding: [50, 50],
+          maxZoom: 14,
+          animate: true,
+        });
+      } else if (!query) {
+        map.flyTo([42.4, -71.8], isMobile ? 7.5 : 8);
+      }
+    }, 400);
   }
 
   // ── Load data ────────────────────────────────────────────────────────
@@ -766,9 +890,13 @@
 
   // ── Events ───────────────────────────────────────────────────────────
   searchEl.addEventListener('input', applyFilters);
-  cbClasses.addEventListener('change', applyFilters);
-  cbOpen.addEventListener('change', applyFilters);
-  cbMember.addEventListener('change', applyFilters);
+  filterCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
+
+  clearBtn.addEventListener('click', () => {
+    searchEl.value = '';
+    searchEl.focus();
+    applyFilters();
+  });
 
   // ── Mobile drawer ────────────────────────────────────────────────────
   const sidebar   = document.getElementById('sidebar');
@@ -779,7 +907,6 @@
   function setupMobile() {
     if (window.innerWidth <= 768) {
       sidebar.classList.add('drawer');
-      overlay.style.display = 'block';
     } else {
       sidebar.classList.remove('drawer', 'open');
       overlay.style.display = 'none';
@@ -791,6 +918,7 @@
   filterBtn.addEventListener('click', () => {
     drawerOpen = !drawerOpen;
     sidebar.classList.toggle('open', drawerOpen);
+    overlay.style.display = drawerOpen ? 'block' : 'none';
     overlay.classList.toggle('visible', drawerOpen);
     filterBtn.innerHTML = drawerOpen
       ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Close`
@@ -801,6 +929,7 @@
     drawerOpen = false;
     sidebar.classList.remove('open');
     overlay.classList.remove('visible');
+    overlay.style.display = 'none';
     filterBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg> Filter`;
   });
 

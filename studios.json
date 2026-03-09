@@ -3,254 +3,3912 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.0890, 42.3885] },
-      "properties": {
-        "name": "Mudflat Studio",
-        "address": "149 Broadway, Somerville, MA",
-        "website": "https://mudflat.org",
-        "phone": "(617) 628-0589",
-        "classes": true,
-        "open_studio": true,
-        "member_studios": true,
-        "notes": "Community ceramics studio offering classes for all levels, open studio time, and member artists. One of the oldest pottery studios in the Boston area."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.1056, 42.3642] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9507921,
+          42.4765929
+        ]
+      },
       "properties": {
         "name": "The Clay School",
-        "address": "130 Bishop Allen Dr, Cambridge, MA",
-        "website": "https://theclayschool.com",
+        "address": "271 Western Ave #316, Lynn, MA 01904",
+        "website": "https://www.theclayschool.com/",
         "phone": "",
         "classes": true,
         "open_studio": true,
         "member_studios": false,
-        "notes": "Community ceramics studio in Cambridge offering wheel throwing, hand building, and glaze classes for all skill levels."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": "Best clay school in the world!"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.1227, 42.3736] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1339689,
+          42.3634472
+        ]
+      },
       "properties": {
-        "name": "Cambridge Center for Adult Education",
-        "address": "42 Brattle St, Cambridge, MA",
-        "website": "https://ccae.org",
-        "phone": "(617) 547-6789",
-        "classes": true,
-        "open_studio": false,
-        "member_studios": false,
-        "notes": "Long-running adult education center in Harvard Square offering ceramics and pottery classes alongside other arts courses."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.1018, 42.3838] },
-      "properties": {
-        "name": "Artisan's Asylum",
-        "address": "10 Tyler St, Somerville, MA",
-        "website": "https://artisansasylum.com",
-        "phone": "(617) 616-6943",
+        "name": "Harvard Ceramics",
+        "address": "224 Western Ave, Allston, MA",
+        "website": "https://ofa.fas.harvard.edu/ceramics-classes",
+        "phone": "",
         "classes": true,
         "open_studio": true,
         "member_studios": true,
-        "notes": "Large maker community space with a dedicated ceramics studio. Offers classes and open studio membership."
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.0442, 42.3530] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.611027,
+          43.1766315
+        ]
+      },
       "properties": {
-        "name": "Society of Arts and Crafts",
-        "address": "100 Pier 4 Blvd, Boston, MA",
-        "website": "https://societyofcrafts.org",
-        "phone": "(617) 266-1810",
+        "name": "Chase's Garage",
+        "address": "16 Main St, York, ME",
+        "website": "https://chasesgarage.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1250679,
+          42.4016737
+        ]
+      },
+      "properties": {
+        "name": "Commonwealth Clayworks",
+        "address": "1060 Broadway Unit C001, Somerville, MA",
+        "website": "https://www.commonwealthclayworks.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0838845,
+          42.3494102
+        ]
+      },
+      "properties": {
+        "name": "Pottery Studio 1",
+        "address": "279 Newbury St, Boston, MA 02116",
+        "website": "https://pottery-boston.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0637054,
+          42.3421019
+        ]
+      },
+      "properties": {
+        "name": "Clay Lounge",
+        "address": "75 Thayer St, Boston, MA 02118",
+        "website": "http://www.clayloungeboston.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0932422,
+          42.375516
+        ]
+      },
+      "properties": {
+        "name": "Clay Lounge",
+        "address": "561 Windsor St, Somerville, MA 02143",
+        "website": "https://www.clayloungeboston.com/somerville",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1600967,
+          42.3910521
+        ]
+      },
+      "properties": {
+        "name": "Indigo Fire Belmont",
+        "address": "60 Concord Ave, Belmont, MA 02478",
+        "website": "http://www.indigofirestudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0819489,
+          42.3874337
+        ]
+      },
+      "properties": {
+        "name": "Mudflat Pottery School",
+        "address": "81 Broadway, Somerville, MA 02145",
+        "website": "http://www.mudflat.org/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0542236,
+          42.3438751
+        ]
+      },
+      "properties": {
+        "name": "Pottery Studio 1 - Pottery Classes and Events",
+        "address": "33 A St, Boston, MA 02127",
+        "website": "https://pottery-boston.com/",
+        "phone": "",
         "classes": false,
         "open_studio": false,
         "member_studios": false,
-        "notes": "America's oldest nonprofit craft organization. Gallery and shop selling handmade ceramics and other fine crafts by juried artists."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.0991, 42.3363] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1526562,
+          42.3691914
+        ]
+      },
       "properties": {
-        "name": "MassArt Continuing Education",
-        "address": "621 Huntington Ave, Boston, MA",
-        "website": "https://massart.edu/continuing-education",
-        "phone": "(617) 879-7000",
+        "name": "Indigo Fire Watertown",
+        "address": "79R Grove St, Watertown, MA 02472",
+        "website": "http://www.indigofirestudio.com/",
+        "phone": "",
         "classes": true,
         "open_studio": false,
         "member_studios": false,
-        "notes": "Massachusetts College of Art and Design continuing education program offering ceramics and sculpture classes to the public."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.1568, 42.4149] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0808402,
+          42.3498237
+        ]
+      },
       "properties": {
-        "name": "Arlington Center for the Arts",
-        "address": "41 Foster St, Arlington, MA",
-        "website": "https://acarts.org",
-        "phone": "(781) 648-6220",
+        "name": "Rainbows Pottery Studio",
+        "address": "216 Newbury St, Boston, MA 02116",
+        "website": "https://www.rainbowspottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1390625,
+          42.451264
+        ]
+      },
+      "properties": {
+        "name": "Studio on the Common",
+        "address": "22 Church St, Winchester, MA 01890",
+        "website": "https://www.studioonthecommon.com/pottery-studio",
+        "phone": "",
         "classes": true,
         "open_studio": false,
         "member_studios": false,
-        "notes": "Community arts center offering ceramics classes for adults and youth in Arlington."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.2073, 42.3513] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1419376,
+          42.4057314
+        ]
+      },
       "properties": {
-        "name": "New Art Center",
-        "address": "61 Washington Park, Newtonville, MA",
-        "website": "https://newartcenter.org",
-        "phone": "(617) 964-3424",
+        "name": "Clay Dreams",
+        "address": "183 Massachusetts Ave, Arlington, MA 02474",
+        "website": "http://www.claydreams.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": "Painting"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1253387,
+          42.3414196
+        ]
+      },
+      "properties": {
+        "name": "Clayroom",
+        "address": "1408 Beacon St, Brookline, MA 02446",
+        "website": "http://www.clayroom.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1177655,
+          42.3327969
+        ]
+      },
+      "properties": {
+        "name": "Feet of Clay Pottery",
+        "address": "21 Station St, Brookline, MA 02445",
+        "website": "http://www.feetofclaypottery.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": true,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0612053,
+          42.4673011
+        ]
+      },
+      "properties": {
+        "name": "Paper and Clay Pottery Studio & Gallery Gift Shop",
+        "address": "953 Main St, Melrose, MA 02176",
+        "website": "http://www.paperandclaymelrose.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2394659,
+          42.2969145
+        ]
+      },
+      "properties": {
+        "name": "Pottery with a Purpose",
+        "address": "178 Crescent Rd Suite 1, Needham, MA 02494",
+        "website": "http://potterywithapurpose.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1022406,
+          42.3141213
+        ]
+      },
+      "properties": {
+        "name": "JP Clay",
+        "address": "29 Germania St, Boston, MA 02130",
+        "website": "https://www.jpclay.com/",
+        "phone": "",
         "classes": true,
         "open_studio": true,
         "member_studios": false,
-        "notes": "Community arts center in Newton offering wheel throwing, hand building, and raku ceramics classes and studio membership."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.1218, 42.3318] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1180678,
+          42.332917
+        ]
+      },
       "properties": {
-        "name": "Brookline Arts Center",
-        "address": "86 Monmouth St, Brookline, MA",
-        "website": "https://brooklineartscenter.com",
-        "phone": "(617) 566-4452",
-        "classes": true,
-        "open_studio": false,
-        "member_studios": false,
-        "notes": "Community arts center offering pottery and ceramics classes for adults and children in Brookline."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-70.8566, 42.4982] },
-      "properties": {
-        "name": "North Shore Art Center",
-        "address": "11 Pleasant St, Marblehead, MA",
-        "website": "https://northshorearts.org",
-        "phone": "(781) 631-5515",
-        "classes": true,
-        "open_studio": false,
-        "member_studios": false,
-        "notes": "Arts center on the North Shore offering pottery and ceramics classes alongside fine arts instruction."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-70.8802, 42.5584] },
-      "properties": {
-        "name": "Montserrat College of Art",
-        "address": "23 Essex St, Beverly, MA",
-        "website": "https://montserrat.edu",
-        "phone": "(978) 921-4242",
-        "classes": true,
-        "open_studio": false,
-        "member_studios": false,
-        "notes": "Visual arts college offering community ceramics courses through its continuing education program."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-70.8231, 42.2409] },
-      "properties": {
-        "name": "South Shore Art Center",
-        "address": "119 Ripley Rd, Cohasset, MA",
-        "website": "https://southshoreart.org",
-        "phone": "(781) 383-2787",
-        "classes": true,
+        "name": "Andem Art Studios",
+        "address": "21 Andem Pl, Brookline, MA 02445",
+        "website": "https://www.andemartstudios.com/",
+        "phone": "",
+        "classes": false,
         "open_studio": true,
         "member_studios": false,
-        "notes": "Established arts center offering ceramics and pottery classes, open studio time, and gallery exhibitions."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.4162, 42.2792] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1000612,
+          42.479659
+        ]
+      },
       "properties": {
-        "name": "Danforth Art Museum School",
-        "address": "123 Union Ave, Framingham, MA",
-        "website": "https://danforthart.org",
-        "phone": "(508) 620-0050",
+        "name": "Ceramica Paint Studio",
+        "address": "380 Main St, Stoneham, MA 02180",
+        "website": "http://www.ceramicapaintstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": "Painting"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1815817,
+          42.3053589
+        ]
+      },
+      "properties": {
+        "name": "Na'ama's Art Studio",
+        "address": "76 Drumlin Rd, Newton, MA 02459",
+        "website": "https://www.naamayacoby.com/",
+        "phone": "",
         "classes": true,
         "open_studio": false,
         "member_studios": false,
-        "notes": "Art school and museum offering ceramics and pottery classes for adults and children in Framingham."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.3495, 42.4604] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1193527,
+          42.3828111
+        ]
+      },
       "properties": {
-        "name": "The Pottery Studio",
-        "address": "84 Thoreau St, Concord, MA",
+        "name": "Made by Me",
+        "address": "1685 Massachusetts Ave, Cambridge, MA 02138",
+        "website": "http://www.made-by-me.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1190299,
+          42.3889703
+        ]
+      },
+      "properties": {
+        "name": "Mudflat Gallery",
+        "address": "36 White St, Cambridge, MA 02140",
+        "website": "https://www.mudflat.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0321259,
+          42.1929311
+        ]
+      },
+      "properties": {
+        "name": "Portland Pottery Inc",
+        "address": "87 Messina Dr, Braintree, MA 02184",
+        "website": "http://www.portlandpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1329522,
+          42.4871263
+        ]
+      },
+      "properties": {
+        "name": "Smart Ceramics",
+        "address": "12 Hancock St, Woburn, MA 01801",
+        "website": "http://www.smart-ceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2370396,
+          42.3698675
+        ]
+      },
+      "properties": {
+        "name": "Gourmet Pottery",
+        "address": "O'donnel Bulding, 365 Moody St, Waltham, MA 02453",
         "website": "",
         "phone": "",
-        "classes": true,
-        "open_studio": true,
-        "member_studios": false,
-        "notes": "Community pottery studio in Concord offering wheel and hand building classes and open studio membership."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.8023, 42.2629] },
-      "properties": {
-        "name": "Worcester Center for Crafts",
-        "address": "25 Sagamore Rd, Worcester, MA",
-        "website": "https://worcestercraftcenter.org",
-        "phone": "(508) 753-8183",
-        "classes": true,
-        "open_studio": true,
-        "member_studios": true,
-        "notes": "One of the largest craft schools in New England. Offers extensive ceramics programming, open studio, and resident artist studios."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-72.6342, 42.3251] },
-      "properties": {
-        "name": "Northampton Center for the Arts",
-        "address": "17 New South St, Northampton, MA",
-        "website": "https://nohoarts.org",
-        "phone": "(413) 584-7327",
-        "classes": true,
+        "classes": false,
         "open_studio": false,
-        "member_studios": true,
-        "notes": "Arts center in downtown Northampton with ceramics studio space and classes in the Pioneer Valley."
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-72.7388, 42.6014] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.364722,
+          42.1314604
+        ]
+      },
       "properties": {
-        "name": "Digging Dog Pottery",
-        "address": "23 Mechanic St, Shelburne Falls, MA",
-        "website": "https://diggingdogpottery.com",
+        "name": "Sheffield Pottery",
+        "address": "995 N Main St, Sheffield, MA 01257",
+        "website": "https://www.sheffield-pottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5829061,
+          42.3462796
+        ]
+      },
+      "properties": {
+        "name": "Amherst Potters Supply",
+        "address": "47 East St #3, Hadley, MA 01035",
+        "website": "http://www.amherstpotters.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0819489,
+          42.3874337
+        ]
+      },
+      "properties": {
+        "name": "Tyson Graham Pottery",
+        "address": "81 Broadway, Somerville, MA 02145",
+        "website": "http://www.tysongrahampottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3961132,
+          42.4572168
+        ]
+      },
+      "properties": {
+        "name": "Clay art & concept",
+        "address": "114 Commonwealth Ave, Concord, MA 01742",
+        "website": "https://clayartandconcept.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3686325,
+          42.3085924
+        ]
+      },
+      "properties": {
+        "name": "Hoffman Pottery-W Stockbridge",
+        "address": "103 Great Barrington Rd, West Stockbridge, MA 01266",
+        "website": "https://ehoffmanpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5054113,
+          42.1834621
+        ]
+      },
+      "properties": {
+        "name": "Berkshire Pottery",
+        "address": "2891 NY-23, Hillsdale, NY 12529",
+        "website": "http://berkshirepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0899724,
+          42.7034021
+        ]
+      },
+      "properties": {
+        "name": "North Adams Clay",
+        "address": "189 Beaver St Studio 301, North Adams, MA 01247",
+        "website": "https://northadamsclay.com/",
         "phone": "",
         "classes": true,
         "open_studio": true,
         "member_studios": false,
-        "notes": "Working pottery studio in Shelburne Falls offering classes and open studio. Beautiful rural setting in the Pioneer Valley."
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.4548, 42.9956] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3310958,
+          42.3162717
+        ]
+      },
       "properties": {
-        "name": "Studio 550",
-        "address": "550 Elm St, Manchester, NH",
-        "website": "https://studio550.org",
-        "phone": "(603) 668-6656",
+        "name": "Berkshire Art Center",
+        "address": "13 Willard Hill Rd, Stockbridge, MA 01262",
+        "website": "https://berkshireartcenter.org/",
+        "phone": "",
         "classes": true,
         "open_studio": true,
-        "member_studios": true,
-        "notes": "Regional ceramics studio just over the NH border. Included as a resource for potters in northern MA. Classes, open studio, and member space."
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3665394,
+          42.2549314
+        ]
+      },
+      "properties": {
+        "name": "Lorimer Burns Ceramics",
+        "address": "Cottage St, Housatonic, MA 01236",
+        "website": "http://lorimerburnsceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2219678,
+          42.7033912
+        ]
+      },
+      "properties": {
+        "name": "Tim Duncan Pottery",
+        "address": "534 Cold Spring Rd, Williamstown, MA 01267",
+        "website": "https://timduncanpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3530959,
+          42.3592996
+        ]
+      },
+      "properties": {
+        "name": "The Clay Cottage",
+        "address": "2399 Swamp Rd, Richmond, MA 01254",
+        "website": "https://www.instagram.com/theclaycottagema/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3635382,
+          42.1965934
+        ]
+      },
+      "properties": {
+        "name": "Daniel Bellow Pottery",
+        "address": "17 Railroad Ave, Great Barrington, MA 01230",
+        "website": "http://danielbellow.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8734167,
+          42.2356664
+        ]
+      },
+      "properties": {
+        "name": "Gray Catbird Pottery Studio",
+        "address": "Huntington Shoppes, 22 E Main St, Huntington, MA 01050",
+        "website": "http://www.facebook.com/graycatbirdpottery",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5883741,
+          42.0818866
+        ]
+      },
+      "properties": {
+        "name": "A Ceramic Studio",
+        "address": "7 S Bridge Dr, Agawam, MA 01001",
+        "website": "http://www.aceramicartstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5974433,
+          42.3611695
+        ]
+      },
+      "properties": {
+        "name": "Round Clay Studio & Designs",
+        "address": "25 Hudson Ave, Chatham, NY 12037",
+        "website": "http://iamround.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1001372,
+          42.7017891
+        ]
+      },
+      "properties": {
+        "name": "River Hill Pottery",
+        "address": "243 Union St STE 104, North Adams, MA 01247",
+        "website": "https://eclipsemill.com/river-hill-pottery/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2521491,
+          42.4504724
+        ]
+      },
+      "properties": {
+        "name": "Lichtenstein Center for the Arts",
+        "address": "28 Renne Ave, Pittsfield, MA 01201",
+        "website": "https://www.cityofpittsfield.org/departments/arts_and_culture/lichtenstein_center.php",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6770549,
+          42.3313745
+        ]
+      },
+      "properties": {
+        "name": "Tiffany Hilton Pottery / Pivot Pottery",
+        "address": "221 Pine St #336, Florence, MA 01062",
+        "website": "http://tiffanyhilton.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.1131891,
+          42.1158426
+        ]
+      },
+      "properties": {
+        "name": "Brush It Off Art & Pottery Studio",
+        "address": "559 Main St Suite 103-104, Fiskdale, MA 01518",
+        "website": "http://brush-it-off.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8812002,
+          42.5563708
+        ]
+      },
+      "properties": {
+        "name": "Score and Slip Pottery Studio",
+        "address": "480 Rantoul St, Beverly, MA 01915",
+        "website": "https://scoreandslip.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2787685,
+          41.7293999
+        ]
+      },
+      "properties": {
+        "name": "Mudstone Studios",
+        "address": "30 Cutler St #129, Warren, RI 02885",
+        "website": "http://www.mudstonestudios.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.309207,
+          41.752434
+        ]
+      },
+      "properties": {
+        "name": "Clay Art Studio RI",
+        "address": "14 Paquin Rd, Barrington, RI 02806",
+        "website": "https://clayartstudiori.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4993301,
+          41.4382709
+        ]
+      },
+      "properties": {
+        "name": "Rebekah Cook Art and Paint Your Own Pottery Studio",
+        "address": "344 Main St, Wakefield, RI 02879",
+        "website": "https://rebekahcookart.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5270607,
+          41.8700395
+        ]
+      },
+      "properties": {
+        "name": "Studio Glob",
+        "address": "375 Putnam Pike Suite 9, Smithfield, RI 02917",
+        "website": "https://studioglob.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4810266,
+          41.4305579
+        ]
+      },
+      "properties": {
+        "name": "Create Color Art Studio",
+        "address": "91 Point Judith Rd, Narragansett, RI 02882",
+        "website": "http://www.createcolorartstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4017862,
+          41.9540424
+        ]
+      },
+      "properties": {
+        "name": "Pea Poddery",
+        "address": "2364 Diamond Hill Rd, Cumberland, RI 02864",
+        "website": "http://www.peapoddery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4361974,
+          41.7771698
+        ]
+      },
+      "properties": {
+        "name": "Artists' Exchange",
+        "address": "50 Rolfe Square, Cranston, RI 02910",
+        "website": "http://www.artists-exchange.org/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.428379,
+          41.8277405
+        ]
+      },
+      "properties": {
+        "name": "Anyhow Studio",
+        "address": "25 Acorn St, Providence, RI 02903",
+        "website": "https://www.anyhowstudioprovidence.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4654832,
+          41.6418593
+        ]
+      },
+      "properties": {
+        "name": "Clayground Studio",
+        "address": "5600 Post Rd #109, East Greenwich, RI 02818",
+        "website": "",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4068623,
+          41.7322083
+        ]
+      },
+      "properties": {
+        "name": "Imperial Ceramics",
+        "address": "1621 Warwick Ave, Warwick, RI 02889",
+        "website": "http://imperial-ceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3950964,
+          41.8490874
+        ]
+      },
+      "properties": {
+        "name": "Studio Hop",
+        "address": "810 Hope St, Providence, RI 02906",
+        "website": "http://studiohopri.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3945612,
+          41.8201591
+        ]
+      },
+      "properties": {
+        "name": "Three Wheel Studio",
+        "address": "436 Wickenden St, Providence, RI 02903",
+        "website": "http://www.threewheelstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4064388,
+          41.7416781
+        ]
+      },
+      "properties": {
+        "name": "MoonStone Art Studio",
+        "address": "953 Namquid Dr, Warwick, RI 02888",
+        "website": "http://www.moonstoneartstudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4673205,
+          42.0826496
+        ]
+      },
+      "properties": {
+        "name": "Artworks Clay Studio",
+        "address": "108 Mechanic St #17, Bellingham, MA 02019",
+        "website": "https://www.artworksclaystudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.31426,
+          41.4808819
+        ]
+      },
+      "properties": {
+        "name": "All Fired Up-Pottery Studio",
+        "address": "452 Thames St #6730, Newport, RI 02840",
+        "website": "",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4568086,
+          41.7893516
+        ]
+      },
+      "properties": {
+        "name": "RI Clay Space",
+        "address": "838 Dyer Ave Unit 2, Cranston, RI 02920",
+        "website": "https://www.riclayspace.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4337052,
+          41.8267797
+        ]
+      },
+      "properties": {
+        "name": "The Steel Yard",
+        "address": "27 Sims Ave, Providence, RI 02909",
+        "website": "http://www.thesteelyard.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3821775,
+          41.8817993
+        ]
+      },
+      "properties": {
+        "name": "Mad Dog Artist Studios",
+        "address": "65 Blackstone Ave, Pawtucket, RI 02860",
+        "website": "http://www.maddogartiststudios.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.452887,
+          41.569118
+        ]
+      },
+      "properties": {
+        "name": "Spring Pottery",
+        "address": "14 Brown St, North Kingstown, RI 02852",
+        "website": "https://springpotteryofwickford.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4072072,
+          41.8728162
+        ]
+      },
+      "properties": {
+        "name": "Mudstone Studios",
+        "address": "560 Mineral Spring Ave #6117, Pawtucket, RI 02860",
+        "website": "https://www.mudstonestudios.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4426392,
+          42.7124414
+        ]
+      },
+      "properties": {
+        "name": "Time To Clay",
+        "address": "228 Daniel Webster Hwy, Nashua, NH 03060",
+        "website": "http://www.timetoclay.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3216046,
+          42.6306822
+        ]
+      },
+      "properties": {
+        "name": "Pottery Mill LLC",
+        "address": "325 Chelmsford St, Lowell, MA 01851",
+        "website": "http://www.potterymill.com",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3777836,
+          42.6380786
+        ]
+      },
+      "properties": {
+        "name": "Center Ceramics Pottery Studio",
+        "address": "55 Middlesex St, North Chelmsford, MA 01863",
+        "website": "https://www.centerceramics.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4634422,
+          42.9859282
+        ]
+      },
+      "properties": {
+        "name": "Studio 550 Arts Center",
+        "address": "550 Elm St, Manchester, NH 03101",
+        "website": "http://www.550arts.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4730912,
+          42.7583648
+        ]
+      },
+      "properties": {
+        "name": "Picker Artists LLC",
+        "address": "3 Pine St, Nashua, NH 03060",
+        "website": "http://www.pickerartists.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.320553,
+          42.6633614
+        ]
+      },
+      "properties": {
+        "name": "Blue Rabbit Ceramics Studio",
+        "address": "1057 Lakeview Ave, Dracut, MA 01826",
+        "website": "https://bluerabbitceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5856764,
+          42.74292
+        ]
+      },
+      "properties": {
+        "name": "Hollis Artspace",
+        "address": "30 Ash St, Hollis, NH 03049",
+        "website": "http://www.hollisartspace.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024497,
+          42.7465857
+        ]
+      },
+      "properties": {
+        "name": "Rooted In Clay",
+        "address": "208 Middle Winchendon Rd, Rindge, NH 03461",
+        "website": "http://www.rootedinclay.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3756679,
+          43.03059
+        ]
+      },
+      "properties": {
+        "name": "Willow Hill Pottery",
+        "address": "57 Morgen Dr, Auburn, NH 03032",
+        "website": "https://willowhillpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5702285,
+          42.6069844
+        ]
+      },
+      "properties": {
+        "name": "old school clay and ceramics",
+        "address": "145 Main St, Groton, MA 01450",
+        "website": "https://oldschoolclayandceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.849098,
+          42.798921
+        ]
+      },
+      "properties": {
+        "name": "Mudworks Pottery",
+        "address": "222 Cutter Rd, Temple, NH 03084",
+        "website": "http://www.mudworksnh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6762688,
+          42.8956209
+        ]
+      },
+      "properties": {
+        "name": "Pottery @ PhoebesBarn",
+        "address": "16 N Main St, Mont Vernon, NH 03057",
+        "website": "http://www.phoebesbarn.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4796886,
+          42.9632765
+        ]
+      },
+      "properties": {
+        "name": "You're Fired",
+        "address": "25 S River Rd, Bedford, NH 03110",
+        "website": "http://www.yourefirednh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2356574,
+          42.7909688
+        ]
+      },
+      "properties": {
+        "name": "You're Fired",
+        "address": "264 N Broadway, Salem, NH 03079",
+        "website": "http://www.yourefirednh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7749509,
+          43.0480801
+        ]
+      },
+      "properties": {
+        "name": "Firefly Pottery LLC",
+        "address": "72 Mirona Rd Suite 1, Portsmouth, NH 03801",
+        "website": "http://fireflypotterynh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4182281,
+          42.7532396
+        ]
+      },
+      "properties": {
+        "name": "Express It Art",
+        "address": "140 Melendy Rd, Hudson, NH 03051",
+        "website": "http://expressitarts.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4487274,
+          42.7601681
+        ]
+      },
+      "properties": {
+        "name": "MakeIt Labs",
+        "address": "25 Crown St, Nashua, NH 03060",
+        "website": "http://makeitlabs.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4650521,
+          42.7605175
+        ]
+      },
+      "properties": {
+        "name": "Drawing & Painting Studio",
+        "address": "174 Main St #7, Nashua, NH 03060",
+        "website": "http://drawingandpaintingstudionashua.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4986764,
+          43.2205833
+        ]
+      },
+      "properties": {
+        "name": "Black Olive Pottery Studio LLC",
+        "address": "211 Loudon Rd STE D, Concord, NH 03301",
+        "website": "https://blackolivepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8775137,
+          43.1986864
+        ]
+      },
+      "properties": {
+        "name": "Dover Pottery Studio",
+        "address": "66 Third St, Dover, NH 03820",
+        "website": "https://doverpottery.studio/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.467646,
+          42.9982378
+        ]
+      },
+      "properties": {
+        "name": "Under The Moon Creative Art Studio",
+        "address": "155 Dow St, Manchester, NH 03101",
+        "website": "https://www.underthemoonartstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7733158,
+          43.0680896
+        ]
+      },
+      "properties": {
+        "name": "The Wheel House of NH",
+        "address": "865 Islington St, Portsmouth, NH 03801",
+        "website": "https://thewheelhousenh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1051345,
+          42.8493469
+        ]
+      },
+      "properties": {
+        "name": "Cozy Kiln",
+        "address": "160 Plaistow Rd Unit 18, Plaistow, NH 03865",
+        "website": "https://www.cozykiln.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4644857,
+          42.9894369
+        ]
+      },
+      "properties": {
+        "name": "AR Workshop Manchester",
+        "address": "23 W Merrimack St, Manchester, NH 03101",
+        "website": "https://www.arworkshop.com/manchester",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8793014,
+          42.5473704
+        ]
+      },
+      "properties": {
+        "name": "Clay Dreaming Pottery Studio",
+        "address": "186 Cabot St, Beverly, MA 01915",
+        "website": "https://claydreaming.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9806389,
+          43.4124151
+        ]
+      },
+      "properties": {
+        "name": "The Creation Place LLC",
+        "address": "406 Main St, New London, NH 03257",
+        "website": "https://www.thecreationplacenh.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5592836,
+          42.8529686
+        ]
+      },
+      "properties": {
+        "name": "Wheelhouse Clay Center",
+        "address": "48 Harmony Place, Brattleboro, VT 05301",
+        "website": "http://wheelhouseclaycenter.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5541,
+          42.83719
+        ]
+      },
+      "properties": {
+        "name": "Stephen Procter Studios",
+        "address": "76 Cotton Mill Hill Studio C-119, Brattleboro, VT 05301",
+        "website": "http://www.stephenprocter.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.55758,
+          42.8692
+        ]
+      },
+      "properties": {
+        "name": "Brattleboro Clayworks",
+        "address": "532 Putney Rd, Brattleboro, VT 05301",
+        "website": "http://brattleboroclayworks.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2031011,
+          42.8845914
+        ]
+      },
+      "properties": {
+        "name": "MAYCA Studio",
+        "address": "160 Benmont Ave, Bennington, VT 05201",
+        "website": "https://www.themaycastudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2292174,
+          44.5509858
+        ]
+      },
+      "properties": {
+        "name": "Mudcraft",
+        "address": "794 W Lakeshore Dr, Colchester, VT 05446",
+        "website": "https://mudcraftstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.745546,
+          41.7608217
+        ]
+      },
+      "properties": {
+        "name": "The Claypen",
+        "address": "997 Farmington Ave, West Hartford, CT 06107",
+        "website": "http://www.theclaypen.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5575733,
+          41.809876
+        ]
+      },
+      "properties": {
+        "name": "Little Bird Clay Company",
+        "address": "The Shops at Evergreen Walk, 85 Evergreen Way, South Windsor, CT 06074",
+        "website": "http://www.littlebirdclayco.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.723014,
+          41.7337202
+        ]
+      },
+      "properties": {
+        "name": "JunkPot Studio",
+        "address": "604 New Park Ave, West Hartford, CT 06110",
+        "website": "http://www.junkpotstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8098098,
+          41.8893801
+        ]
+      },
+      "properties": {
+        "name": "Rachel Eve pottery",
+        "address": "10 Horseshoe Cir, Simsbury, CT 06070",
+        "website": "http://www.rachelevepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.7338088,
+          41.7041065
+        ]
+      },
+      "properties": {
+        "name": "The Lazy Potter",
+        "address": "184 Dowd St, Newington, CT 06111",
+        "website": "http://www.thelazypotter.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.584357,
+          41.7153641
+        ]
+      },
+      "properties": {
+        "name": "Bliss Pottery House",
+        "address": "730 Hebron Ave Suite 9, Glastonbury, CT 06033",
+        "website": "https://www.blisspotteryhouse.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5202009,
+          41.7666108
+        ]
+      },
+      "properties": {
+        "name": "The Firestone | Art studio + Cafe",
+        "address": "1115 Main St, Manchester, CT 06040",
+        "website": "http://thefirestonect.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.4137706,
+          41.5457481
+        ]
+      },
+      "properties": {
+        "name": "The Color House",
+        "address": "738 Middletown Rd, Colchester, CT 06415",
+        "website": "http://www.cohoct.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.3759767,
+          41.2929066
+        ]
+      },
+      "properties": {
+        "name": "Earth and Fire Pottery Studio",
+        "address": "180 Main St, Old Saybrook, CT 06475",
+        "website": "http://www.earthandfireartstudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9191524,
+          41.8511617
+        ]
+      },
+      "properties": {
+        "name": "Canton Clay Works LLC",
+        "address": "150 Cherry Brook Rd, Canton, CT 06019",
+        "website": "http://www.cantonclayworks.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5926267,
+          42.007447
+        ]
+      },
+      "properties": {
+        "name": "Kil'n It Pottery Studio",
+        "address": "610 Enfield St, Enfield, CT 06082",
+        "website": "http://www.kilnitpotterystudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.3511206,
+          41.8594879
+        ]
+      },
+      "properties": {
+        "name": "Birch Mountain Pottery",
+        "address": "223 Merrow Rd, Tolland, CT 06084",
+        "website": "https://www.birchmountainpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.8592719,
+          41.6756037
+        ]
+      },
+      "properties": {
+        "name": "The Pottery Piazza",
+        "address": "17 Farmington Ave, Plainville, CT 06062",
+        "website": "http://www.thepotterypiazza.net/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.2788833,
+          41.7857261
+        ]
+      },
+      "properties": {
+        "name": "Mill Court Ceramics",
+        "address": "2 Old Mill Ct, Storrs, CT 06268",
+        "website": "http://www.facebook.com/pg/MillCourtCeramics/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9821409,
+          41.3376377
+        ]
+      },
+      "properties": {
+        "name": "The Clay Date",
+        "address": "146 Amity Rd, New Haven, CT 06515",
+        "website": "https://theclaydate.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6505328,
+          41.5467079
+        ]
+      },
+      "properties": {
+        "name": "Wesleyan Potters, Inc",
+        "address": "350 S Main St, Middletown, CT 06457",
+        "website": "http://www.wesleyanpotters.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.213059,
+          41.7117888
+        ]
+      },
+      "properties": {
+        "name": "Spiral Arts Studio",
+        "address": "750 Main St, Willimantic, CT 06226",
+        "website": "http://www.spiralartsstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.90967,
+          41.9153323
+        ]
+      },
+      "properties": {
+        "name": "Sawmill Pottery",
+        "address": "112 Main Street #14, Putnam, CT 06260",
+        "website": "http://www.sawmillpottery.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9313982,
+          41.3012029
+        ]
+      },
+      "properties": {
+        "name": "New Haven Pottery Studio",
+        "address": "22 Gold St, New Haven, CT 06519",
+        "website": "https://www.newhavenpotterystudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.1499833,
+          41.7514764
+        ]
+      },
+      "properties": {
+        "name": "Rusty Kiln",
+        "address": "136 Boulevard Rd, North Windham, CT 06256",
+        "website": "http://www.rustykiln.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.41451,
+          41.116896
+        ]
+      },
+      "properties": {
+        "name": "The Pottery Factory",
+        "address": "104 Wall Street #2, Norwalk, CT 06850",
+        "website": "https://thepotteryfactory.com/norwalk",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2663741,
+          41.3608809
+        ]
+      },
+      "properties": {
+        "name": "Thatcher Clay Studio",
+        "address": "318 S Main St, Newtown, CT 06470",
+        "website": "https://www.thatcherclaystudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0574912,
+          41.2221908
+        ]
+      },
+      "properties": {
+        "name": "Sunshine Ceramics",
+        "address": "22 S Broad St, Milford, CT 06460",
+        "website": "http://www.sunshineceramicstudios.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6200487,
+          41.2836479
+        ]
+      },
+      "properties": {
+        "name": "Shoreline Clay Club",
+        "address": "170 Fort Path Rd Suite 20, Madison, CT 06443",
+        "website": "https://shorelineclay.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8384474,
+          42.6825254
+        ]
+      },
+      "properties": {
+        "name": "The Pottery Place, Inc",
+        "address": "1475 Western Ave, Albany, NY 12203",
+        "website": "https://thepotteryplace.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7904655,
+          42.6529709
+        ]
+      },
+      "properties": {
+        "name": "Albany Art Room",
+        "address": "350 New Scotland Ave, Albany, NY 12208",
+        "website": "http://www.albanyartroom.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.690496,
+          42.732203
+        ]
+      },
+      "properties": {
+        "name": "The Broken Mold Studio",
+        "address": "284 River St #3224, Troy, NY 12180",
+        "website": "https://thebrokenmoldstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6323805,
+          43.0981405
+        ]
+      },
+      "properties": {
+        "name": "Saratoga Clay Arts Center",
+        "address": "167 Hayes Rd, Schuylerville, NY 12871",
+        "website": "http://www.saratogaclayarts.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.805746,
+          42.7154136
+        ]
+      },
+      "properties": {
+        "name": "Botanical Brush",
+        "address": "17 Computer Dr E Suite A, Albany, NY 12205",
+        "website": "https://botanicalbrush.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7835311,
+          42.8584599
+        ]
+      },
+      "properties": {
+        "name": "Arts & Glass",
+        "address": "19 Clifton Country Rd, Clifton Park, NY 12065",
+        "website": "http://www.iloveartsandglass.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4838278,
+          42.6779865
+        ]
+      },
+      "properties": {
+        "name": "Studio For Art and Craft",
+        "address": "576 E Main St #4100, Cobleskill, NY 12043",
+        "website": "http://www.thestudioforartandcraft.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0013217,
+          41.9316564
+        ]
+      },
+      "properties": {
+        "name": "Kingston Ceramics Studio",
+        "address": "77 Cornell St #309, Kingston, NY 12401",
+        "website": "http://www.kingstonceramicsstudio.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6916394,
+          42.7320512
+        ]
+      },
+      "properties": {
+        "name": "Arts Center of the Capital Region",
+        "address": "265 River St, Troy, NY 12180",
+        "website": "http://www.artscenteronline.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7120812,
+          42.7212176
+        ]
+      },
+      "properties": {
+        "name": "Waterbrook Potters Studio",
+        "address": "406b 9th Ave, Watervliet, NY 12189",
+        "website": "http://www.waterbrookpotters.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8663197,
+          42.2180881
+        ]
+      },
+      "properties": {
+        "name": "Cone Zero Ceramics",
+        "address": "111 Water St, Catskill, NY 12414",
+        "website": "http://www.conezeroceramics.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7574369,
+          42.7569254
+        ]
+      },
+      "properties": {
+        "name": "Painting with a Twist",
+        "address": "899 Loudon Rd, Latham, NY 12110",
+        "website": "https://www.paintingwithatwist.com/studio/albany/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9288218,
+          42.6568007
+        ]
+      },
+      "properties": {
+        "name": "Ridgeline Ceramics",
+        "address": "10 N Main St building 3A, Voorheesville, NY 12186",
+        "website": "https://ridgelineceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9469925,
+          42.8124285
+        ]
+      },
+      "properties": {
+        "name": "C.R.E.A.T.E. Community Studios",
+        "address": "140 Erie Blvd, Schenectady, NY 12305",
+        "website": "http://www.createcommunitystudios.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8641642,
+          42.7458031
+        ]
+      },
+      "properties": {
+        "name": "Ceramic Decor & More",
+        "address": "1997 Central Ave # 3, Colonie, NY 12205",
+        "website": "https://www.ceramicdecorandmore.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.265678,
+          43.111934
+        ]
+      },
+      "properties": {
+        "name": "The Ceramic Shop / Core Fit",
+        "address": "2430 NY-30, Mayfield, NY 12117",
+        "website": "",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8215227,
+          42.7002431
+        ]
+      },
+      "properties": {
+        "name": "Arlene's Artist Materials",
+        "address": "57 Fuller Rd, Albany, NY 12205",
+        "website": "https://linktr.ee/ArlenesArtist",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9103934,
+          41.9351962
+        ]
+      },
+      "properties": {
+        "name": "Hudson Valley Pottery",
+        "address": "6536 Spring Brook Ave, Rhinebeck, NY 12572",
+        "website": "http://www.hudsonvalleypottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9633696,
+          41.7193624
+        ]
+      },
+      "properties": {
+        "name": "Studio 89",
+        "address": "54 Vineyard Ave, Highland, NY 12528",
+        "website": "http://studio89hv.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9196193,
+          41.7014931
+        ]
+      },
+      "properties": {
+        "name": "Fall Kill Creative Works Clay Studio",
+        "address": "485 Main St, Poughkeepsie, NY 12601",
+        "website": "https://fallkillcreativeworks.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0119959,
+          41.4963276
+        ]
+      },
+      "properties": {
+        "name": "The Newburgh Pottery",
+        "address": "102 S William St, Newburgh, NY 12550",
+        "website": "https://thenewburghpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.964994,
+          41.505818
+        ]
+      },
+      "properties": {
+        "name": "Silica Studio 845",
+        "address": "211 Fishkill Ave Studio 109, Beacon, NY 12508",
+        "website": "https://potteryclassesbeacon.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9149438,
+          41.304913
+        ]
+      },
+      "properties": {
+        "name": "Peekskill Clay Studios",
+        "address": "1000 N Division St, Peekskill, NY 10566",
+        "website": "http://www.peekskillclaystudios.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960201,
+          41.7377197
+        ]
+      },
+      "properties": {
+        "name": "West's Ceramic Supply",
+        "address": "4 Lumen Ln, Highland, NY 12528",
+        "website": "http://westsceramicsupplyinc.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6111795,
+          42.3346988
+        ]
+      },
+      "properties": {
+        "name": "UglyMud Studio",
+        "address": "2407 NY-66, Ghent, NY 12075",
+        "website": "http://uglymudstudio.org/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3007155,
+          41.6089582
+        ]
+      },
+      "properties": {
+        "name": "Uptiquing Paint & Ceramic Studio",
+        "address": "61 Main St, Pine Bush, NY 12566",
+        "website": "https://www.uptiquing.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8541868,
+          41.623317
+        ]
+      },
+      "properties": {
+        "name": "Ceramics By You",
+        "address": "2 Diddell Rd, Wappingers Falls, NY 12590",
+        "website": "http://www.facebook.com/Ceramicsbyyou/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9835101,
+          41.1135255
+        ]
+      },
+      "properties": {
+        "name": "Jill's Ceramics",
+        "address": "180 Germonds Rd, West Nyack, NY 10994",
+        "website": "http://jillsceramics.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.25335,
+          43.6670943
+        ]
+      },
+      "properties": {
+        "name": "Portland Pottery Studio",
+        "address": "118 Washington Ave, Portland, ME 04101",
+        "website": "http://www.portlandpottery.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2638855,
+          43.6593917
+        ]
+      },
+      "properties": {
+        "name": "Maine Clay Collaborative",
+        "address": "65 Hanover St Suite 2, Portland, ME 04101",
+        "website": "https://maineclay.org/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2736077,
+          43.6646014
+        ]
+      },
+      "properties": {
+        "name": "Handful Studios",
+        "address": "369 Forest Ave, Portland, ME 04101",
+        "website": "https://www.handfulstudios.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2582748,
+          43.6545002
+        ]
+      },
+      "properties": {
+        "name": "Campfire Pottery",
+        "address": "5 South St, Portland, ME 04101",
+        "website": "http://www.campfirepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4525915,
+          43.4935241
+        ]
+      },
+      "properties": {
+        "name": "Mill Pond Ceramics Studio",
+        "address": "2 Main St Ste 18-214, Biddeford, ME 04005",
+        "website": "https://millpondceramicsstudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4833156,
+          43.3610907
+        ]
+      },
+      "properties": {
+        "name": "The Creative Soul",
+        "address": "2 Christensen Ln, Kennebunk, ME 04043",
+        "website": "http://thecreativesoulme.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2566119,
+          43.6698701
+        ]
+      },
+      "properties": {
+        "name": "Portland Pottery Supply",
+        "address": "220 Anderson St, Portland, ME 04101",
+        "website": "http://www.portlandpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": true,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6112612,
+          43.6746652
+        ]
+      },
+      "properties": {
+        "name": "Earth & Soul Pottery",
+        "address": "168 Bonny Eagle Rd, Hollis, ME 04042",
+        "website": "http://www.earthandsoulpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": true,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2552196,
+          43.6665172
+        ]
+      },
+      "properties": {
+        "name": "Portland Pottery Fox St Studio",
+        "address": "49 Fox St, Portland, ME 04101",
+        "website": "https://portlandpottery.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8520746,
+          44.4056705
+        ]
+      },
+      "properties": {
+        "name": "The Pottery Studio",
+        "address": "630 W Bethel Rd, Bethel, ME 04217",
+        "website": "http://potterystudiobethel.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2567338,
+          43.6709008
+        ]
+      },
+      "properties": {
+        "name": "Running With Scissors Artist Studios & Community",
+        "address": "250 Anderson St, Portland, ME 04101",
+        "website": "http://www.rwsartstudios.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6464493,
+          43.1436611
+        ]
+      },
+      "properties": {
+        "name": "Ocean Fire Pottery, LLC",
+        "address": "23 Woodbridge Rd, York, ME 03909",
+        "website": "http://oceanfirepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3682918,
+          43.6789577
+        ]
+      },
+      "properties": {
+        "name": "Campfire Pottery Production Studio",
+        "address": "90 Bridge St #226, Westbrook, ME 04092",
+        "website": "https://campfirepottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7471369,
+          43.0856261
+        ]
+      },
+      "properties": {
+        "name": "Red Door Pottery Studio",
+        "address": "44 Government St, Kittery, ME 03904",
+        "website": "http://www.reddoorpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.7641639,
+          43.9418763
+        ]
+      },
+      "properties": {
+        "name": "Saltbox Pottery",
+        "address": "4 Shaw Rd, Woolwich, ME 04579",
+        "website": "http://saltboxpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.1489065,
+          44.1690104
+        ]
+      },
+      "properties": {
+        "name": "Honey Bee Hill Ceramics",
+        "address": "55 Mill St, Rockport, ME 04856",
+        "website": "https://www.honeybeehillart.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5556396,
+          43.365911
+        ]
+      },
+      "properties": {
+        "name": "The Cellar Co",
+        "address": "128 York St, Kennebunk, ME 04043",
+        "website": "https://www.thecellarco.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1018712,
+          42.3637191
+        ]
+      },
+      "properties": {
+        "name": "The Clay Table",
+        "address": "19 Brookline St, Cambridge, MA 02139",
+        "website": "https://www.theclaytablestudio.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4192896,
+          42.2777462
+        ]
+      },
+      "properties": {
+        "name": "Community Kiln",
+        "address": "46 Park Street, Framingham, MA",
+        "website": "https://brickstack.org/studio-memberships",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9298956,
+          42.5230385
+        ]
+      },
+      "properties": {
+        "name": "Pudgy's Place",
+        "address": "119R Foster St, Bldg. 13 Unit 1E, Peabody MA, 01960",
+        "website": "https://www.pudgyproductions.com/membership",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
       }
     }
   ]
