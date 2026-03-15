@@ -1,0 +1,54 @@
+name: Add a Studio
+description: Submit a ceramics studio to be added to the map
+labels: [new-studio]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a studio! Fill in what you know — we'll figure out the rest.
+
+  - type: input
+    id: name
+    attributes:
+      label: Studio name
+    validations:
+      required: true
+
+  - type: input
+    id: address
+    attributes:
+      label: Full address
+      placeholder: "123 Main St, Springfield, MA 01101"
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      placeholder: "https://example.com"
+
+  - type: input
+    id: phone
+    attributes:
+      label: Phone number
+      placeholder: "(555) 555-5555"
+
+  - type: checkboxes
+    id: offerings
+    attributes:
+      label: What does this studio offer?
+      description: Check all that apply.
+      options:
+        - label: Classes
+        - label: Open studio time
+        - label: Member studios (co-op / collective)
+        - label: Gallery
+        - label: Supplies
+        - label: Artist studio
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: "Brief description, hours, what makes this place special, etc."
