@@ -24,7 +24,7 @@
       --bg:        #fafafa;
       --text:      #1a1a1a;
       --text-light: #555;
-      --accent:    #c66b3b;
+      --accent:    #a8552b;
       --card-bg:   #f0f0f0;
       --accent-2:  #28495c;
       --border:    rgba(0,0,0,0.08);
@@ -40,7 +40,7 @@
         --bg:         oklch(98.5% 0 0);
         --text:       oklch(14% 0 0);
         --text-light: oklch(44% 0 0);
-        --accent:     oklch(58% 0.13 44);
+        --accent:     oklch(48% 0.13 44);
         --card-bg:    oklch(94% 0 0);
         --accent-2:   oklch(33% 0.05 229);
         --border:     oklch(0% 0 0 / 0.08);
@@ -422,7 +422,7 @@
     }
     @supports (color: oklch(0 0 0)) {
       .popup-tag.active {
-        background: oklch(58% 0.13 44 / 0.1);
+        background: oklch(48% 0.13 44 / 0.1);
       }
     }
     .popup-notes {
@@ -490,9 +490,9 @@
       gap: 6px;
       transition: transform 0.2s, background 0.3s;
     }
-    #filter-toggle:hover { background: #d4764a; }
+    #filter-toggle:hover { background: #b8623a; }
     @supports (color: oklch(0 0 0)) {
-      #filter-toggle:hover { background: oklch(63% 0.13 44); }
+      #filter-toggle:hover { background: oklch(53% 0.13 44); }
     }
     #filter-toggle:active { transform: scale(0.97); }
 
@@ -702,7 +702,7 @@
 
   // ── Color constants (oklch with hex fallback) ────────────────────────
   const supportsOklch = typeof CSS !== 'undefined' && CSS.supports('color', 'oklch(0 0 0)');
-  const C_ACCENT = supportsOklch ? 'oklch(58% 0.13 44)' : '#c66b3b';
+  const C_ACCENT = supportsOklch ? 'oklch(48% 0.13 44)' : '#a8552b';
   const C_BG     = supportsOklch ? 'oklch(98.5% 0 0)'   : '#fafafa';
 
   // ── Map ─────────────────────────────────────────────────────────────
