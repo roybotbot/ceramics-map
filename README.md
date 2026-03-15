@@ -97,21 +97,20 @@ Open **http://localhost:8000**.
 
 ## TODO
 
-- [ ] Move scripts to `scripts/` directory, update paths
-- [ ] Write `CONTRIBUTING.md`
-- [ ] Write `validate.py` (JSON schema, coordinate bounds, duplicate check)
-- [ ] Add GitHub Actions:
-  - [ ] `validate-pr.yml` — validate `studios.json` on PRs
-  - [ ] `import-sheet-submissions.yml` — Google Sheet → PR pipeline
-  - [ ] `check-urls.yml` — weekly dead link check
-  - [ ] Deploy action to push to roysclay.co on merge
-- [ ] Create GitHub Issue template (`add-studio.yml`)
-- [ ] Create PR template
-- [ ] Set up Google Form for non-technical submissions
-- [ ] Fix favicon path (currently `../assets/img/favicon.svg`, relative to roysclay.co subdirectory)
-- [ ] Add "Contribute on GitHub" link to map sidebar
-- [ ] Consider syncing `--accent` color to `oklch(48%)` (matches roysclay.co contrast fix)
-- [ ] Update `check_urls.py` path from `ceramics-map/studios.json` → `studios.json`
+- [x] Move scripts to `scripts/` directory, update paths
+- [x] Write `CONTRIBUTING.md`
+- [x] Write `validate.py` (JSON schema, coordinate bounds, duplicate check)
+- [x] `validate-pr.yml` — validate `studios.json` on PRs
+- [x] `check-urls.yml` — weekly dead link check
+- [x] Create GitHub Issue template (`add-studio.yml`)
+- [x] Create PR template
+- [x] Fix favicon path — bundled `favicon.svg` in repo
+- [x] Add "Add it here" link to map sidebar
+- [x] Sync `--accent` color to `oklch(48%)` (matches roysclay.co contrast fix)
+- [x] Fix `check_urls.py` path from `ceramics-map/studios.json` → `studios.json`
+- [ ] `import-sheet-submissions.yml` — Google Sheet → PR pipeline
+- [ ] Deploy action to push to roysclay.co on merge
+- [ ] Set up Google Form for non-technical submissions (Roy)
 - [ ] Update `sheets_to_json.py` to create PRs instead of direct commits
 - [ ] Remove `ceramics-map/` from `roysclayco-website` after standalone deploy works
 
