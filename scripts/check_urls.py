@@ -18,7 +18,8 @@ import time
 import requests
 from datetime import datetime, timezone
 
-STUDIOS_FILE = "studios.json"
+REPO_ROOT    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STUDIOS_FILE = os.path.join(REPO_ROOT, "studios.json")
 TIMEOUT      = 15   # seconds per request
 DELAY        = 0.5  # seconds between requests (be polite)
 

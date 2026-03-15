@@ -297,7 +297,8 @@ def main():
 
     geojson = build_geojson(STUDIOS)
 
-    output_path = "studios.json"
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_path = os.path.join(repo_root, "studios.json")
     with open(output_path, "w") as f:
         json.dump(geojson, f, indent=2)
 

@@ -20,7 +20,8 @@ import time
 import requests
 
 SHEET_URL   = os.environ.get("SHEET_URL", "")
-STUDIOS_JSON = os.path.join(os.path.dirname(__file__), "studios.json")
+REPO_ROOT    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STUDIOS_JSON = os.path.join(REPO_ROOT, "studios.json")
 USER_AGENT  = "ma-pottery-map/1.0 hi@roysclay.co"
 
 

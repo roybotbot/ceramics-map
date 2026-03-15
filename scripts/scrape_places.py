@@ -85,7 +85,8 @@ REGIONS = [
     },
 ]
 
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "studios_raw.csv")
+REPO_ROOT   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_FILE = os.path.join(REPO_ROOT, "studios_raw.csv")
 SEARCH_URL  = "https://places.googleapis.com/v1/places:searchText"
 FIELD_MASK  = "places.id,places.displayName,places.formattedAddress,places.nationalPhoneNumber,places.websiteUri"
 
