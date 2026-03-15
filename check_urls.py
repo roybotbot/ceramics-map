@@ -1,7 +1,7 @@
 """
 check_urls.py — weekly dead-link checker for studios.json
 
-Reads ceramics-map/studios.json, GETs every website URL, and reports
+Reads studios.json, GETs every website URL, and reports
 any that return 404 / 410 or fail to connect entirely.
 
 Exit codes:
@@ -18,14 +18,14 @@ import time
 import requests
 from datetime import datetime, timezone
 
-STUDIOS_FILE = "ceramics-map/studios.json"
+STUDIOS_FILE = "studios.json"
 TIMEOUT      = 15   # seconds per request
 DELAY        = 0.5  # seconds between requests (be polite)
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; StudioChecker/1.0; "
-        "+https://github.com/roybotbot/roysclayco-website)"
+        "+https://github.com/roybotbot/ceramics-map)"
     )
 }
 
