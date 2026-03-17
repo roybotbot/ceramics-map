@@ -35,10 +35,52 @@ TERMS = [
 # Each region is searched with every term above. Results are deduplicated by place ID.
 REGIONS = [
     {
-        "name": "Massachusetts",
+        "name": "Greater Boston / Metro West",
         "bounds": {
-            "low":  {"latitude": 41.19, "longitude": -73.51},
-            "high": {"latitude": 42.89, "longitude": -69.93},
+            "low":  {"latitude": 42.20, "longitude": -71.80},
+            "high": {"latitude": 42.70, "longitude": -70.80},
+        },
+    },
+    {
+        "name": "North Shore / Merrimack Valley",
+        "bounds": {
+            "low":  {"latitude": 42.50, "longitude": -71.40},
+            "high": {"latitude": 42.90, "longitude": -70.60},
+        },
+    },
+    {
+        "name": "Central MA / Worcester",
+        "bounds": {
+            "low":  {"latitude": 42.00, "longitude": -72.30},
+            "high": {"latitude": 42.60, "longitude": -71.50},
+        },
+    },
+    {
+        "name": "Western MA / Pioneer Valley",
+        "bounds": {
+            "low":  {"latitude": 42.00, "longitude": -73.51},
+            "high": {"latitude": 42.89, "longitude": -72.20},
+        },
+    },
+    {
+        "name": "South Shore / Plymouth",
+        "bounds": {
+            "low":  {"latitude": 41.80, "longitude": -71.20},
+            "high": {"latitude": 42.30, "longitude": -70.50},
+        },
+    },
+    {
+        "name": "Southeastern MA / New Bedford / Fall River",
+        "bounds": {
+            "low":  {"latitude": 41.40, "longitude": -71.30},
+            "high": {"latitude": 41.90, "longitude": -70.70},
+        },
+    },
+    {
+        "name": "Cape Cod / Islands",
+        "bounds": {
+            "low":  {"latitude": 41.25, "longitude": -70.80},
+            "high": {"latitude": 42.10, "longitude": -69.93},
         },
     },
     {
