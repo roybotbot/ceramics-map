@@ -833,7 +833,8 @@
                      || props.name.toLowerCase().includes(query)
                      || props.address.toLowerCase().includes(query);
 
-      if (nameMatch) {
+      // Only show studios that have classes marked as true
+      if (nameMatch && props.classes) {
         clusterGroup.addLayer(marker);
         visibleLatLngs.push(marker.getLatLng());
         count++;
