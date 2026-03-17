@@ -615,7 +615,7 @@
 
       <div class="divider"></div>
 
-      <!-- Filters -->
+      <!-- Filters (hidden — re-enable when studio categories are filled in)
       <div>
         <p class="section-label">Filter by Type</p>
         <div class="filter-group" id="filter-group">
@@ -653,6 +653,7 @@
       </div>
 
       <div class="divider"></div>
+      -->
 
       <!-- Count -->
       <p id="count-label"><strong id="count-num">—</strong> studios</p>
@@ -688,6 +689,7 @@
 
 <!-- Mobile overlay + button -->
 <div id="drawer-overlay"></div>
+<!-- Filter toggle hidden — re-enable when studio categories are filled in
 <button id="filter-toggle" aria-label="Open filters">
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
     <line x1="4" y1="6" x2="20" y2="6"/>
@@ -696,6 +698,7 @@
   </svg>
   Filter
 </button>
+-->
 
 <script>
 (function () {
@@ -814,33 +817,23 @@
   const clearBtn  = document.getElementById('search-clear');
 
   // ── Filter ───────────────────────────────────────────────────────────
-  const filterCheckboxes = document.querySelectorAll('#filter-group input[type="checkbox"]');
+  // Filters hidden — uncomment when studio categories are filled in
+  // const filterCheckboxes = document.querySelectorAll('#filter-group input[type="checkbox"]');
   let zoomDebounce = null;
-
-  function getActiveFilters() {
-    const active = [];
-    filterCheckboxes.forEach(cb => {
-      if (cb.checked) active.push(cb.dataset.filter);
-    });
-    return active;
-  }
 
   function applyFilters() {
     const query = searchEl.value.trim().toLowerCase();
-    const activeFilters = getActiveFilters();
 
     let count = 0;
     const visibleLatLngs = [];
     clusterGroup.clearLayers();
 
     allMarkers.forEach(({ marker, props }) => {
-      const nameMatch = props.name.toLowerCase().includes(query)
+      const nameMatch = !query
+                     || props.name.toLowerCase().includes(query)
                      || props.address.toLowerCase().includes(query);
 
-      const filterMatch = activeFilters.length > 0 &&
-        activeFilters.some(f => props[f]);
-
-      if (filterMatch && nameMatch) {
+      if (nameMatch) {
         clusterGroup.addLayer(marker);
         visibleLatLngs.push(marker.getLatLng());
         count++;
@@ -891,7 +884,7 @@
 
   // ── Events ───────────────────────────────────────────────────────────
   searchEl.addEventListener('input', applyFilters);
-  filterCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
+  // filterCheckboxes.forEach(cb => cb.addEventListener('change', applyFilters));
 
   clearBtn.addEventListener('click', () => {
     searchEl.value = '';
@@ -902,7 +895,7 @@
   // ── Mobile drawer ────────────────────────────────────────────────────
   const sidebar   = document.getElementById('sidebar');
   const overlay   = document.getElementById('drawer-overlay');
-  const filterBtn = document.getElementById('filter-toggle');
+  const filterBtn = document.getElementById('filter-toggle'); // null when filters hidden
   let drawerOpen  = false;
 
   function setupMobile() {
@@ -916,7 +909,7 @@
     }
   }
 
-  filterBtn.addEventListener('click', () => {
+  if (filterBtn) filterBtn.addEventListener('click', () => {
     drawerOpen = !drawerOpen;
     sidebar.classList.toggle('open', drawerOpen);
     overlay.style.display = drawerOpen ? 'block' : 'none';
@@ -931,7 +924,7 @@
     sidebar.classList.remove('open');
     overlay.classList.remove('visible');
     overlay.style.display = 'none';
-    filterBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg> Filter`;
+    if (filterBtn) filterBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg> Filter`;
   });
 
   setupMobile();
