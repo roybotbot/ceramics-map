@@ -9,6 +9,7 @@ Checks:
   5. No duplicate addresses (normalized)
   6. At least one category boolean is true per studio
   7. Website URLs are well-formed (if present)
+  8. Address format (street number, city, state — enough for geocoding)
 
 Exit codes:
   0 — all checks pass
@@ -50,6 +51,51 @@ def normalize_address(addr):
     # Remove trailing punctuation
     addr = re.sub(r"[.,]+$", "", addr)
     return addr
+
+
+US_STATES = {
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+    "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+    "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
+    "DC",
+}
+
+
+def check_address_format(addr):
+    """Check if an address has enough structure for geocoding.
+
+    Returns a list of warning strings (empty if address looks fine).
+    Expected format: '123 Main St, City, STATE 01234'
+    """
+    issues = []
+
+    # Must have at least one comma (separating street from city)
+    if "," not in addr:
+        issues.append("no commas — expected 'Street, City, State Zip'")
+        return issues  # Can't check further if no structure at all
+
+    parts = [p.strip() for p in addr.split(",")]
+
+    # Check street part has a number somewhere (allow building name prefix)
+    street = parts[0]
+    # Look for a number in any comma-separated part before the city
+    has_number = any(re.search(r"\d", p) for p in parts[:-1])
+    if not has_number:
+        issues.append("no street number found")
+
+    # Check for state abbreviation
+    has_state = bool(re.search(r"\b(" + "|".join(US_STATES) + r")\b", addr))
+    if not has_state:
+        issues.append("no state abbreviation found")
+
+    # Check for zip code (warning only — geocoding often works without it)
+    has_zip = bool(re.search(r"\b\d{5}\b", addr))
+    if not has_zip:
+        issues.append("no zip code")
+
+    return issues
 
 
 def validate():
@@ -132,12 +178,23 @@ def validate():
             else:
                 seen_addresses[norm] = name
 
-        # 6. Check at least one category boolean is true
+        # 6. Check address format
+        if addr:
+            addr_issues = check_address_format(addr)
+            for issue in addr_issues:
+                # Missing state or no commas is an error (geocoding will fail)
+                # Missing number or zip is a warning (geocoding might still work)
+                if "no commas" in issue or "no state" in issue:
+                    errors.append(f"{label}: address — {issue}")
+                else:
+                    warnings.append(f"{label}: address — {issue}")
+
+        # 7. Check at least one category boolean is true
         bools = [props.get(b, False) for b in CATEGORY_BOOLS]
         if not any(bools):
             warnings.append(f"{label}: no category booleans are true")
 
-        # 7. Check website URL format
+        # 8. Check website URL format
         website = props.get("website", "")
         if website:
             parsed = urlparse(website)
