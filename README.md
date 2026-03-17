@@ -114,6 +114,10 @@ Open **http://localhost:8000**.
 - [ ] Update `sheets_to_json.py` to create PRs instead of direct commits
 - [ ] Remove `ceramics-map/` from `roysclayco-website` after standalone deploy works
 
+### Backlog
+
+- [ ] "Find studios near me" — input your address, drop a marker, see nearby studios
+
 ---
 
 ## Docs
