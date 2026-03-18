@@ -3910,6 +3910,29 @@
         "artist_studio": false,
         "notes": ""
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0024047,
+          42.834863
+        ]
+      },
+      "properties": {
+        "name": "Purple Sage Pottery",
+        "address": "3 Mechanic Street, Merrimac, Massachusetts 01860",
+        "website": "https://purplesagepottery.com/",
+        "phone": "",
+        "classes": true,
+        "open_studio": true,
+        "member_studios": false,
+        "gallery": true,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
     }
   ]
 }
