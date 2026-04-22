@@ -2352,6 +2352,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -72.9147336,
+          41.5813108
+        ]
+      },
+      "properties": {
+        "name": "Freebird Pottery Studio LLC",
+        "address": "57 Frost St, Plantsville, CT 06479",
+        "website": "https://freebirdpottery.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -72.7338088,
           41.7041065
         ]
