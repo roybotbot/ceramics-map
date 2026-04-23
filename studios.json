@@ -3134,6 +3134,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -73.8311368,
+          42.6142479
+        ]
+      },
+      "properties": {
+        "name": "Liz Vigoda Pottery",
+        "address": "9 Keith Rd, Delmar, NY 12054",
+        "website": "http://lizvigoda.com/",
+        "phone": "",
+        "classes": false,
+        "open_studio": false,
+        "member_studios": false,
+        "gallery": false,
+        "supplies": false,
+        "artist_studio": false,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.9469925,
           42.8124285
         ]
